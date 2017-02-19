@@ -11,8 +11,8 @@ Simply put, it's a script with a bunch of pseudo-code that will change the aspec
 What do 'Zero' change ?
 -------------------------------
 
-I use a lot of time Danbooru (especially for lewd stuff), that's why decided to write a script for it (because it's quite ugly to be honest!).
-Added a header becasuse why the fuck not, it's cool as fuck, with this some japanese characters for the aesthetic (the buttons such as Artist/Wiki/Post can be found in the top right corner, you'll get used to it I promise), changed the font, the colors, and hide like Google Search the menu bar (the one with favorite/forum/posts/etc).
+I use a lot of time Danbooru (especially for lewd stuff), that's why I decided to write a script for it (because it's quite ugly to be honest!).
+Added a header becasuse why the fuck not, it's cool as fuck, with this some japanese characters for the aesthetic (the buttons such as Artist/Wiki/Post can be found in the top right corner, you'll get used to it I promise), changed the font, the colors, and hide the menu bar (the one with favorite/forum/posts/etc), you'll have to hover he hamburger icon to activate it ! 
 
 How to install it ?
 -------------------------------
