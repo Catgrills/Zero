@@ -22,7 +22,7 @@ After installing 'Stylish', you'll have to 'write a new style', copy/paste the c
 * to install the font I used, namely 'Roboto' (www.fontsquirrel.com/fonts/roboto), 'Bebas Neue' (www.fontsquirrel.com/fonts/bebas-neue), 'Bokutachi no Gothic 2' (http://www.freejapanesefont.com/bokutachi-gothic-2-bold/) and if you want Meiryo, all of them are free so don't be shy.
 * download Adblock Plus to kill the ads.
 * install GreaseMonkey (for Mozilla) or TamperMonkey (for Google).
-* install this script to load all the pages in danbooru (ie infinite scrolling) : greasyfork.org/en/scripts/5250…
+* install this script to load all the pages in danbooru (ie infinite scrolling) : https://sleazyfork.org/en/scripts/5250-unlimited-paginator-works/code
 
 Where can I find your works ?
 -------------------------------
