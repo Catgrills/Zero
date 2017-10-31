@@ -1,4 +1,4 @@
-# Zero
+# Zero-A
 
 ![screenshot](https://a.pomf.cat/nfmxrw.png)
 Preview of Zero-A.
