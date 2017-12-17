@@ -8,7 +8,7 @@ About
 
 Zero-A is a custom stylesheet for danbooru.
 
-A custom stylesheet (or userstyles) a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
+A custom stylesheet (or userstyles) is a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
 
 
 Instruction
@@ -48,7 +48,7 @@ I use several fonts for my custom stylesheet.
 Trivia
 -------------------------------
 
-I decided to name the script Zero-A because when I first discovered Danbooru, I decided to search for some illustrations (original/fanart), and when I wrote some tag (such as the name of an artitst), there were zero results since I forgot the '_'. The A comes from the word Absolute and it refers, without surprise, to Absolute Zero, and I thought it sounds kinda cool (like the expression Abstract Nonsense in mathematics), and I used this letter to differenciate it with my previous Danbooru script called Zero.
+I decided to name the script <i>Zero-A</i> because when I first discovered Danbooru, I decided to search for some illustrations (original/fanart), and when I wrote some tag (such as the name of an artitst), there were zero results since I forgot the '_'. The <i>A</i> comes from the word Absolute and it refers, without surprise, to Absolute Zero, and I thought it sounds kinda cool (like the expression Abstract Nonsense in mathematics), and I used this letter to differenciate it with my previous Danbooru script called <i>Zero</i>.
 
 
 Report
