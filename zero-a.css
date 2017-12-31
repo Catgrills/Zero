@@ -24,7 +24,53 @@
         footer#page-footer {
             display: none !important;
         }
-    
+		.paginator .arrow {
+			color: transparent;
+			visibility: visible !important;
+			position: fixed !important;
+			bottom: 30px !important;
+		}
+		.paginator .arrow:first-child {
+   			left: 14px !important;
+		}
+		.paginator .arrow:last-child {
+    		right: 14px !important;
+		}
+		#c-favorites .paginator a[rel="next"],
+		#c-favorites .paginator a[rel="prev"] {
+			height: 20px !important;
+			width: 17px !important;
+			visibility: visible !important;
+			position: fixed !important;
+			bottom: 20px !important;
+		}
+		#c-favorites .paginator a[rel="next"] {
+    		right: 20px !important;
+		}
+		#c-favorites .paginator a[rel="prev"] {
+    		left: 20px !important;
+		}
+		.arrow a,
+		#c-favorites .paginator a[rel="next"],
+		#c-favorites .paginator a[rel="prev"] {
+			border: none !important;
+			box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+			color: transparent !important;
+			padding: 10px 13px !important;
+		}
+		.paginator .arrow:first-child a,
+		#c-favorites .paginator a[rel="prev"] {
+			background: no-repeat url("http://i.imgur.com/tONrOjq.png") left !important;
+			background-color: #FFF !important;
+			background-size: 40px auto !important;		
+		}
+		.paginator .arrow:last-child a,
+		#c-favorites .paginator a[rel="next"] {
+			background: no-repeat url("https://i.imgur.com/fAZe280.png") right !important;
+			background-color: #FFF !important;
+			background-size: 40px auto !important;		
+		}
+		
 /* HEADER */
 /** DESCRIPTION : change the elements of the header **/
         header#top h1 {
@@ -80,6 +126,7 @@
         }
         header#top menu li a {
             color: #FFF !important;
+        	font-size: 11pt !important;
             font-stretch: condensed !important;
             font-weight: bold !important;
             transition: all .3s ease-in-out !important;
@@ -165,6 +212,9 @@
         #c-users #a-show .box.user-favorites a {
            color: #5C9F97 !important;
         }
+		#options-box {
+  		   display: none !important;
+		}			
     
 /* ARTIST/TAG/POOL/WIKI/NOTES/SEARCHES/CHANGES/UPLOADS/APPEALS/ETC */
 /** DESCRIPTION : change the elements of the artist/tag/poll/notes/searches/changes/etc page **/
@@ -405,7 +455,7 @@
         #c-janitor-trials #a-index .paginator,
         #c-janitor-trials #a-index hr {
             /*** ARTIST LIST PAGINATION/HR ***/
-            display: none !important;
+            visibility: hidden;
         }
         #c-artists #a-show {
             /*** ARTIST MAIN CONTAINER ***/
@@ -563,6 +613,7 @@
         #c-posts #posts {
             /*** LISTING ILLUSTRATION CONTAINER ***/
             width: 90% !important;
+    		padding-bottom: 90px !important;
             position: absolute !important;
             left: 0px;
             right: 0px !important;
@@ -603,7 +654,7 @@
         #c-posts #posts hr,
         #c-posts #posts .paginator {
             /*** LISTING PAGINATION/HR ***/
-            display: none !important;
+            visibility: hidden;
         }
         #c-posts #a-index #sidebar #tag-box,
         #c-posts #a-index #sidebar #related-box {
@@ -688,6 +739,7 @@
         #c-favorite-groups {
             /*** FAVORITE MAIN CONTAINER ***/
             width: 92% !important;
+    		padding-bottom: 90px !important;
             position: absolute !important;
             left: 0px !important;
             right: 0px !important;
@@ -721,7 +773,7 @@
         #c-favorites .paginator,
         #c-favorites hr {
             /*** FAVORITE PAGINATION/HR ***/
-            display: none !important;
+            visibility: hidden !important;
         }
         #c-favorites #a-index #sidebar {
             /*** FAVORITE SIDEBAR ***/
@@ -1073,9 +1125,10 @@
             background-repeat: no-repeat !important;
             background-size: 14px auto !important;
             border: 1px solid #BEBEBE !important;
+            border-radius: 1px !important;
             color: transparent !important;
-            padding: 12px 15px !important;
-            margin-left: -40px !important;
+            padding: 13px 15px 12px 15px !important;
+            margin-left: -4px !important;
         }
         #c-posts #a-show #sidebar #search-box,
         #c-posts #a-show #sidebar #tag-list,
@@ -1109,6 +1162,14 @@
             top: 20px !important;
             right: 30px !important;
         }
+        #add-fav-button, 
+        #remove-fav-button {
+            display: none !important;
+        }
+		#c-posts #a-show #sidebar #add-to-favorites,
+		#c-posts #a-show #sidebar #remove-from-favorites {
+			display: block !important;
+		}
     
 /* FORUM */
 /** DESCRIPTION : change the elements of the forum page **/
