@@ -1,6 +1,6 @@
 # Zero-A
 
-![screenshot](https://a.pomf.cat/nfmxrw.png)
+![screenshot](https://s1.gifyu.com/images/Screenshot-1231.png)
 Preview of Zero-A.
 
 About
