@@ -36,8 +36,8 @@
 		.paginator .arrow:last-child {
     		right: 14px !important;
 		}
-		#c-favorites .paginator a[rel="next"],
-		#c-favorites .paginator a[rel="prev"] {
+		#c-favorites .paginator a[rel="prev"],
+		#c-favorites .paginator a[rel="next"] {
 			height: 20px !important;
 			width: 17px !important;
 			visibility: visible !important;
