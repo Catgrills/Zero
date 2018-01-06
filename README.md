@@ -43,6 +43,12 @@ I use several fonts for my custom stylesheet.
 <li> <a href="http://www.freejapanesefont.com/bokutachi-gothic-2-bold/">Bokutachi no Gothic 2 </a></li>
 </ol>
 
+<strong>Step 5 : Show your appreciation </strong>
+<ol>
+<li>Feel free to comment this deviation (critique, suggestion, compliment, etc).</li>
+<li>If you like my works, don't hesitate to watch me.</li>
+<li>You can share it, but don't forget to mention me.</li>
+</ol>
 
 Trivia
 -------------------------------
