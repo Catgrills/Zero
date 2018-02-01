@@ -48,8 +48,8 @@
         right: 14px !important;
     }
 
-    #c-favorites .paginator a[rel="prev"],
-    #c-favorites .paginator a[rel="next"] {
+    #c-favorites .paginator a[rel="next"],
+    #c-favorites .paginator a[rel="prev"] {
         height: 20px !important;
         width: 17px !important;
         visibility: visible !important;
@@ -153,7 +153,7 @@
 
     header#top menu li a {
         color: #FFF !important;
-        font-size: 11pt !important;
+        font-size: 12pt !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
         transition: all .3s ease-in-out !important;
@@ -190,6 +190,10 @@
         position: absolute !important;
         top: 9px !important;
         right: -48px !important;
+    }
+
+    .ui-autocomplete {
+        font-size: 11pt !important;
     }
 
     /* ACCOUNT */
@@ -731,7 +735,7 @@
         /*** LISTING THUMBNAILS ILLUSTRATION DIMENSION ***/
         background: #3F3F3F !important;
         color: #FFF !important;
-        font-size: 9.5pt !important;
+        font-size: 11pt !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
         padding: 8px 10px 9px 10px !important;
@@ -1149,6 +1153,7 @@
         background: #FCB941 !important;
         border: 1px solid #F9AE74 !important;
         color: #FFF !important;
+        font-size: 12pt !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
         padding: 8px 15px !important;
