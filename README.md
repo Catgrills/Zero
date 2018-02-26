@@ -1,8 +1,6 @@
 # Zero-A
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1288.png)
-
-![screenshot](https://s1.gifyu.com/images/Screenshot-1289.png)
+<img src="preview_zero-a.png" width="100%">
 
 Preview of <i>Zero-A</i>.
 
