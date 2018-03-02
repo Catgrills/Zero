@@ -32,7 +32,7 @@ Instruction
 
 <strong>Step 3 : Install others scripts </strong>
 <ol>
-<li>Install <a href="https://greasyfork.org/en/scripts/32347-danbooru-bigger-thumbnails-and-others">Danbooru Bigger Thumbnails and Others</a>.</li>
+<li>Install <a href="https://greasyfork.org/en/scripts/32347-danbooru-bigger-thumbnails-and-others">Danbooru Bigger Illustration and Others</a> and <a href="https://greasyfork.org/en/scripts/3575-better-better-booru">Better Better Booru</a>.</li>
 </ol>
 
 <strong>Step 4 : Install the font </strong>
