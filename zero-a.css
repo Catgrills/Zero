@@ -1,6 +1,5 @@
 @-moz-document domain("danbooru.donmai.us") {
-
-    /* GENERAL */
+/* GENERAL */
 
     /** DESCRIPTION : set the main font and change others elements **/
     * {
@@ -33,59 +32,28 @@
         display: none !important;
     }
 
-    .paginator .arrow {
-        color: transparent;
-        visibility: visible !important;
-        position: fixed !important;
-        bottom: 30px !important;
-    }
-
-    .paginator .arrow:first-child {
-        left: 14px !important;
-    }
-
-    .paginator .arrow:last-child {
-        right: 14px !important;
-    }
-
-    #c-favorites .paginator a[rel="next"],
-    #c-favorites .paginator a[rel="prev"] {
-        height: 20px !important;
-        width: 17px !important;
-        visibility: visible !important;
-        position: fixed !important;
-        bottom: 20px !important;
-    }
-
-    #c-favorites .paginator a[rel="next"] {
-        right: 20px !important;
-    }
-
-    #c-favorites .paginator a[rel="prev"] {
-        left: 20px !important;
-    }
-
-    .arrow a,
-    #c-favorites .paginator a[rel="next"],
-    #c-favorites .paginator a[rel="prev"] {
+    .paginator li * {
+        background: #FFF !important;
         border: none !important;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-        color: transparent !important;
-        padding: 10px 13px !important;
+        border-radius: 2px !important;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+        color: #5E5E5E;
+        font-size: 14pt;
+        font-stretch: condensed !important;
     }
 
-    .paginator .arrow:first-child a,
-    #c-favorites .paginator a[rel="prev"] {
-        background: no-repeat url("http://i.imgur.com/tONrOjq.png") left !important;
-        background-color: #FFF !important;
-        background-size: 40px auto !important;
+	.paginator li a:hover {
+		color: #2CC990 !important;        
+	}
+
+    .paginator .current-page span {
+        color: #2CC990;
+        font-size: 14pt !important;
+        font-weight: normal !important;
     }
 
-    .paginator .arrow:last-child a,
-    #c-favorites .paginator a[rel="next"] {
-        background: no-repeat url("https://i.imgur.com/fAZe280.png") right !important;
-        background-color: #FFF !important;
-        background-size: 40px auto !important;
+	.paginator .arrow {
+        display: none !important;
     }
 
     /* HEADER */
@@ -95,19 +63,19 @@
 
         /*** HEADER CONTAINER ***/
         background-color: #2CC990 !important;
-        height: 40px !important;
+        height: 45px !important;
         width: 100% !important;
         text-align: center !important;
         position: fixed !important;
         margin-left: 0px !important;
         top: -6px !important;
-        line-height: 26px !important;
+        line-height: 45px !important;
         z-index: 999 !important;
         transition: margin-left .5s;
     }
 
     header#top h1 a {
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         width: 100% !important;
         color: #FFF !important;
         visibility: hidden;
@@ -123,7 +91,7 @@
         position: absolute !important;
         left: 0px !important;
         right: 0px !important;
-        margin: 9.5px auto !important;
+        margin: 10px auto !important;
         visibility: visible !important;
     }
 
@@ -147,15 +115,18 @@
     }
 
     header#top menu li {
+        width: 100% !important;
+        overflow: hidden;
+        white-space: nowrap !important;
         display: block !important;
         padding: 0px 0px 9px 0px !important;
     }
 
     header#top menu li a {
         color: #FFF !important;
-        font-size: 12pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
-        font-weight: bold !important;
+        font-weight: normal !important;
         transition: all .3s ease-in-out !important;
     }
 
@@ -166,6 +137,7 @@
 
     header#top menu.main li.current a {
         background: transparent !important;
+        color: #BEBEBE !important;
     }
 
     #quick_search_body_matches,
@@ -175,8 +147,9 @@
         background: transparent !important;
         border: none !important;
         color: #FFF !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
-        font-weight: bold !important;
+        font-weight: normal !important;
         padding: 0px 8px !important;
         margin-left: 0px !important;
     }
@@ -188,13 +161,18 @@
         border: none !important;
         color: transparent !important;
         position: absolute !important;
-        top: 9px !important;
+        top: 11px !important;
         right: -48px !important;
     }
 
     .ui-autocomplete {
-        font-size: 11pt !important;
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
     }
+
+	.ui-state-focus {
+        margin: 0px !important;  
+	}
 
     /* ACCOUNT */
 
@@ -204,7 +182,7 @@
         /*** ACCOUNT MAIN CONTAINER ***/
         background: #FFF !important;
         border: 1px solid #BEBEBE !important;
-        width: 90% !important;
+        width: 95% !important;
         padding: 12px 20px !important;
         position: absolute !important;
         left: 0px !important;
@@ -237,11 +215,17 @@
         margin-right: -20px !important;
     }
 
+	#c-users #a-show table.user-statistics * {
+		font-size: 15pt;        
+        font-stretch: condensed;
+	}
+
     #c-users #a-show table.user-statistics th {
         color: #34495E !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
         text-align: left !important;
-        text-transform: uppercase !important;
+        text-transform: Capitalize !important;
     }
 
     #c-users #a-show .box.user-favorites {
@@ -333,7 +317,12 @@
 
     #c-pools #a-index .search label {
         font-stretch: condensed !important;
-        text-transform: uppercase !important;
+    }
+
+    #c-pools #a-index .search * {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
     }
 
     #c-wiki-pages #a-index #content h1,
@@ -385,6 +374,11 @@
         font-stretch: condensed !important;
         text-transform: uppercase !important;
         margin-bottom: 10px !important;
+    }
+
+    #a-index > p:nth-of-type(1) {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
     }
 
     #c-artists #a-index .striped,
@@ -462,58 +456,37 @@
         display: none;
     }
 
-    #c-artists #a-index .paginator,
+    .striped td {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+    }
+
     #c-artists #a-index hr,
-    #c-tags #a-index .paginator,
     #c-tags #a-index hr,
-    #c-pools #a-index .paginator,
     #c-pools #a-index hr,
-    #c-notes #a-index .paginator,
     #c-notes #a-index hr,
-    #c-wiki-pages #a-index .paginator,
     #c-wiki-pages #a-index hr,
-    #c-wiki-page-versions #a-index .paginator,
     #c-wiki-page-versions #a-index hr,
-    #c-uploads #a-index .paginator,
     #c-uploads #a-index hr,
-    #c-post-appeals #a-index .paginator,
     #c-post-appeals #a-index hr,
-    #c-post-flags #a-index .paginator,
     #c-post-flags #a-index hr,
-    #c-post-replacements #a-index .paginator,
     #c-post-replacements #a-index hr,
-    #c-post-notes-versions #a-index .paginator,
     #c-post-notes-versions #a-index hr,
-    #c-artist-versions #a-index .paginator,
     #c-artist-versions #a-index hr,
-    #c-artist-commentary-versions #a-index .paginator,
     #c-artist-commentary-versions #a-index hr,
-    #c-artist-commentaries #a-index .paginator,
     #c-artist-commentaries #a-index hr,
     #c-artist-commentaries #a-index hr,
-    #c-versions #a-index .paginator,
     #c-versions #a-index hr,
-    #c-tag-aliases #a-index .paginator,
     #c-tag-aliases #a-index hr,
-    #c-tag-implications #a-index .paginator,
     #c-tag-implications #a-index hr,
-    #c-forum-topics #a-index .paginator,
     #c-forum-topics #a-index hr,
-    #c-forum-posts #a-index .paginator,
     #c-forum-posts #a-index hr,
-    #c-users #a-index .paginator,
     #c-users #a-index hr,
-    #c-user-feedbacks #a-index .paginator,
     #c-user-feedbacks #a-index hr,
-    #c-bans #a-index .paginator,
     #c-bans #a-index hr,
-    #c-mod-actions #a-index .paginator,
     #c-mod-actions #a-index hr,
-    #c-delayed-jobs #a-index .paginator,
     #c-delayed-jobs #a-index hr,
-    #c-burs #a-index .paginator,
     #c-burs #a-index hr,
-    #c-janitor-trials #a-index .paginator,
     #c-janitor-trials #a-index hr {
 
         /*** ARTIST LIST PAGINATION/HR ***/
@@ -611,10 +584,16 @@
     #c-wiki-pages #a-show h3,
     #c-wiki-pages #a-show h4,
     #c-wiki-pages #a-show strong {
-        font-size: 12.5pt !important;
+        font-size: 15pt !important;
         font-stretch: condensed !important;
+        font-weight: normal;
         text-transform: uppercase !important;
         margin-bottom: 10px !important;
+    }
+
+    #c-wiki-pages #content * {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
     }
 
     #wiki-page-body {
@@ -639,9 +618,19 @@
         display: none !important;
     }
 
+	#c-wiki-pages .post-preview {
+        border: 2px solid #BEBEBE;
+        height: 100% !important;
+        float: left !important;
+        padding-bottom: 41px !important;
+        margin: 10px 0px 10px 10px !important;
+	}
+
     #c-wiki-pages #a-show #sidebar {
 
         /*** WIKI SIDEBAR ***/
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
         margin-top: 5px !important;
         margin-left: 0px !important;
     }
@@ -680,6 +669,8 @@
         /*** LISTING ARTIST CONTAINER ***/
         background: #FFF !important;
         border: 1px solid #BEBEBE !important;
+        font-size: 15pt;
+        font-stretch: condensed;
         padding: 20px !important;
         width: 90% !important;
         position: absolute !important;
@@ -701,7 +692,7 @@
     #c-posts #posts {
 
         /*** LISTING ILLUSTRATION CONTAINER ***/
-        width: 90% !important;
+        width: 95% !important;
         padding-bottom: 90px !important;
         position: absolute !important;
         left: 0px;
@@ -713,32 +704,36 @@
         display: inline !important;
     }
 
-    #c-posts #posts article {
+    #c-posts #posts article,
+	#c-users .post-preview {
 
         /*** LISTING THUMBNAILS ***/
-        background: #FFF;
+        background: #F9F9F9;
+        border: 2px solid #BEBEBE;
+        height: 100% !important;
         float: left !important;
-        padding-bottom: 34px !important;
-        margin: auto auto 5px 5px !important;
+        padding-bottom: 41px !important;
+        margin: 10px 0px 10px 10px !important;
     }
 
     #heart-icon {
 
         /*** LISTING FAVORITE ICON ***/
-        background: no-repeat url('https://i.imgur.com/HGsEwLb.png') center !important;
-        background-size: cover !important;
+        background: no-repeat url('https://i.imgur.com/wu2OcFV.pngg') center !important;
+        background-size: 22px auto !important;
         opacity: .7 !important;
     }
 
-    #c-posts article #illustration_dimension {
+    #illustration_dimension {
 
         /*** LISTING THUMBNAILS ILLUSTRATION DIMENSION ***/
         background: #3F3F3F !important;
+        border-top: 1px solid #363535 !important;
         color: #FFF !important;
-        font-size: 11pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
-        padding: 8px 10px 9px 10px !important;
+        padding: 12px 10px !important;
         position: absolute !important;
         left: 0px !important;
         right: 0px !important;
@@ -747,13 +742,20 @@
 
     #posts a img {
         border: none !important;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
     }
 
-    #c-posts #posts hr,
-    #c-posts #posts .paginator {
+    #c-posts #posts hr {
 
         /*** LISTING PAGINATION/HR ***/
         visibility: hidden;
+    }
+
+    #c-posts #posts .paginator {
+        position: absolute;
+		bottom: 0px !important;
+        left: 0px;
+        right: 0px;
     }
 
     #c-posts #a-index #sidebar #tag-box,
@@ -768,7 +770,7 @@
         /*** LISTING SEARCH BOX ***/
         width: 100% !important;
         position: fixed !important;
-        top: 39px !important;
+        top: 44px !important;
         left: 0px !important;
         right: 0px !important;
         margin: auto !important;
@@ -779,6 +781,8 @@
         background: #F9F9F9 !important;
         border: none !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         padding: 10px 15px 12px 15px !important;
         width: 100% !important;
     }
@@ -829,10 +833,11 @@
     #c-posts #a-index #post-sections {
 
         /*** LISTING MENU ***/
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         text-transform: uppercase !important;
         position: fixed;
-        top: 9px !important;
+        top: 10px !important;
         right: 0px !important;
         z-index: 9999 !important;
     }
@@ -874,26 +879,13 @@
     #c-favorites article {
 
         /*** FAVORITE THUMBNAILS ***/
-        padding-bottom: 34px !important;
-        margin: auto auto 5px 5px !important;
+        background: #F9F9F9;
+        border: 2px solid #BEBEBE;
+        height: 100% !important;
+        padding-bottom: 41px !important;
+        margin: 10px 0px 10px 10px !important;
     }
 
-    #c-favorites article #illustration_dimension {
-
-        /*** FAVORITE THUMBNAILS ILLUSTRATION DIMENSION ***/
-        background: #3F3F3F !important;
-        color: #FFF !important;
-        font-size: 9.5pt !important;
-        font-stretch: condensed !important;
-        font-weight: bold !important;
-        padding: 8px 10px 9px 10px !important;
-        position: absolute !important;
-        left: 0px !important;
-        right: 0px !important;
-        bottom: 0px !important;
-    }
-
-    #c-favorites .paginator,
     #c-favorites hr {
 
         /*** FAVORITE PAGINATION/HR ***/
@@ -944,7 +936,7 @@
     #c-explore-posts #a-popular {
 
         /*** POPULAR ILLUSTRATION CONTAINER ***/
-        width: 90% !important;
+        width: 95% !important;
         position: absolute !important;
         left: 0px !important;
         right: 0px !important;
@@ -958,7 +950,7 @@
     #c-explore-posts #a-popular article {
 
         /*** POPULAR THUMBNAILS ***/
-        padding-bottom: 34px !important;
+        padding-bottom: 41px !important;
     }
 
     #c-explore-posts #a-popular article #illustration_dimension {
@@ -986,7 +978,7 @@
         top: 100px !important;
         left: 0px !important;
         right: 0px !important;
-        width: 90% !important;
+        width: 95% !important;
         margin: auto !important;
     }
 
@@ -1000,7 +992,7 @@
     #c-pools #a-show article {
 
         /*** POOL THUMBNAILS ***/
-        padding-bottom: 34px !important;
+        padding-bottom: 41px !important;
     }
 
     #c-pools #a-show article #illustration_dimension {
@@ -1035,7 +1027,7 @@
         top: 100px !important;
         left: 0px !important;
         right: 0px !important;
-        width: 90% !important;
+        width: 95% !important;
         margin: auto !important;
     }
 
@@ -1050,9 +1042,10 @@
 
         /*** GALLERY PARENT/CHILD BOXES ***/
         border-radius: 1px !important;
-        font-size: 13px !important;
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
         height: 100% !important;
-        max-height: 14px !important;
+        max-height: 22px !important;
         padding: 12px 15px 15px 15px !important;
         top: 20px !important;
         position: relative !important;
@@ -1115,12 +1108,13 @@
         /*** GALLERY FAVORITE POST NOTICE ***/
         border-color: #212121 !important;
         background: #3E4651 !important;
-        border-radius: 1px !important;
+        border-radius: 3px !important;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
         color: #FFF !important;
-        font-size: 11pt !important;
+        font-size: 15pt !important;
         font-stretch: condensed !important;
-        font-weight: bold !important;
-        padding: 10px 0px 10px 14px !important;
+        font-weight: normal !important;
+        padding: 15px 0px 15px 15px !important;
         position: fixed !important;
         top: 60px !important;
         left: 20px !important;
@@ -1133,6 +1127,7 @@
         color: transparent !important;
         filter: brightness(0) invert(1) !important;
         right: 5px !important;
+        top: 11px;
     }
 
     #c-posts #a-show #image-container {
@@ -1153,10 +1148,10 @@
         background: #FCB941 !important;
         border: 1px solid #F9AE74 !important;
         color: #FFF !important;
-        font-size: 12pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
-        padding: 8px 15px !important;
+        padding: 10px 15px !important;
         width: 50% !important;
         text-transform: uppercase !important;
         margin-top: 10px !important;
@@ -1194,19 +1189,30 @@
     }
 
     #artist-commentary h2 {
+        font-size: 20pt !important;
         font-stretch: condensed !important;
-        padding-left: 15px !important;
+        font-weight: normal !important;
+        padding-left: 20px !important;
         padding-top: 15px !important;
     }
 
     #artist-commentary #commentary-sections {
-        padding-left: 12px !important;
+        padding-left: 15px !important;
         padding-top: 5px !important;
         margin-bottom: -5px !important;
     }
 
+    #artist-commentary #commentary-sections * {
+        color: #5E5E6E;
+        font-size: 17pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
     #artist-commentary section {
-        padding: 15px 15px 10px 15px !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        padding: 15px 15px 10px 20px !important;
     }
 
     #c-posts #a-show #comments {
@@ -1226,9 +1232,27 @@
         float: none !important;
     }
 
-    .comment .author h1 .user-member {
+    #c-posts #a-show #comments .comment .author h1 .user-member {
         color: #2C82C9 !important;
+        font-size: 17pt !important;
         font-stretch: condensed !important;
+        font-weight: normal;
+    }
+
+	#c-posts #a-show #comments .comment time {
+        color: #5E5E5E;
+        font-size: 15pt;
+		font-stretch: condensed !important;  
+        padding-top: 20px !important;
+	}
+
+    #c-posts #a-show #comments .author * {
+        line-height: 30px !important;
+    }
+
+    #c-posts #a-show #comments .comments-for-post .list-of-comments .comment .content {
+		font-size: 15pt !important;
+        font-stretch: condensed;
     }
 
     #c-posts #a-show #comments .list-of-comments > p {
@@ -1247,6 +1271,7 @@
 
     .comments-for-post .row.notices * {
         color: #5692BF !important;
+        font-size: 14pt;
     }
 
     .new-comment {
@@ -1273,6 +1298,8 @@
     }
 
     form.simple_form div.input textarea {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         width: 60% !important;
         padding: 20px !important;
     }
@@ -1280,9 +1307,10 @@
     .btn[value="Submit"],
     input[value="Preview"] {
         color: #FFF !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: bold !important;
-        padding: 5px 15px 6px 15px !important;
+        padding: 6px 20px !important;
         text-transform: uppercase !important;
         margin-right: 5px !important;
     }
@@ -1319,6 +1347,8 @@
         /*** GALLERY SIDEBAR SEARCH BOX INPUT ***/
         background: #FFF !important;
         border: 1px solid #BEBEBE !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         padding: 12px 15px !important;
         width: 90% !important;
     }
@@ -1345,7 +1375,7 @@
 
     #c-posts #a-show #sidebar h1,
     #c-posts #a-show #sidebar h2 {
-        font-size: 11pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         text-transform: uppercase !important;
         margin-bottom: 10px !important;
@@ -1354,6 +1384,8 @@
     #c-posts #a-show #sidebar ul li {
         background: #FFF !important;
         border: 1px solid #BEBEBE !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         display: inline-block !important;
         padding: 5px 10px 6px 10px !important;
         margin-right: 5px !important;
@@ -1395,16 +1427,17 @@
         font-weight: normal !important;
         padding: 10px 15px 12px 15px !important;
         position: fixed !important;
-        top: 39px !important;
+        top: 44px !important;
         left: 0px !important;
         right: 0px !important;
     }
 
     #c-forum-topics > #a-show > .info {
-        font-size: 10pt !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         font-style: normal !important;
         position: fixed !important;
-        top: 15px !important;
+        top: 17px !important;
         right: 22px !important;
     }
 
@@ -1417,14 +1450,29 @@
     #c-forum-topics #a-show .forum-post {
         background: #FFF !important;
         border: 1px solid #BEBEBE !important;
+        box-shadow: none !important;
         padding: 20px !important;
         margin-bottom: 10px !important;
     }
 
-    #c-forum-topics #a-show .forum-post .author .user-post-uploader {
+    #c-forum-topics #a-show .forum-post .author .user-post-uploader,
+	.author h4 a {
         color: #2C82C9 !important;
-        font-size: 13pt !important;
+        font-size: 17pt !important;
         font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
+
+    .list-of-forum-posts article .author time {
+        color: #5E5E5E !important;
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+        font-style: normal !important;
+    }
+
+    .list-of-forum-posts .content * {
+        font-size: 15pt;
+        font-stretch: condensed;
     }
 
     .forum-post .prose .expandable {
@@ -1443,7 +1491,7 @@
 
     #c-forum-topics #a-show .forum-post .info {
         font-style: normal !important;
-        font-size: 10pt !important;
+        font-size: 15pt !important;
     }
 
     #c-forum-topics #a-show .list-of-forum-posts .forum-post .content .prose pre {
@@ -1527,7 +1575,7 @@
 
         /*** COMMENTS THUMBNAILS ***/
         border: 2px solid #BEBEBE !important;
-        height: 253px !important;
+        height: 100% !important;
         width: auto !important;
     }
 
@@ -1537,11 +1585,21 @@
         display: none !important;
     }
 
-    #c-comments #a-index .list-of-comments,
-    #c-comments #a-index .new-comment,
-    #c-comments .paginator,
-    #c-comments hr {
-        display: none !important;
+    #c-comments #a-index .comments-for-post .header * {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
     }
 
+    #c-comments #a-index .list-of-comments * {
+        font-size: 15pt !important;
+        font-stretch: condensed !important;
+    }
+
+    #c-comments .comment {
+        background: #F9F9F9 !important;
+        border: 1px solid #BEBEBE !important;
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
 }
