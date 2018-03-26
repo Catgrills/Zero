@@ -1416,9 +1416,7 @@
 		float: none !important;
 	}
 
-	#c-posts #a-show #comments .comment .author h1 .user-builder,
-	#c-posts #a-show #comments .comment .author h1 .user-member,
-	#c-posts #a-show #comments .comment .author h1 .user-gold {
+	#c-posts #a-show #comments .comment .author h1 * {
 		color: #2C82C9 !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
