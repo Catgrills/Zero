@@ -1211,9 +1211,9 @@
 	div#notice:not(.ui-state-error) {
 
 		/*** GALLERY FAVORITE POST NOTICE ***/
-		border-color: #212121 !important;
 		background: #3E4651 !important;
-		border-radius: 3px !important;
+		border: none !important;
+		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-size: 15pt !important;
