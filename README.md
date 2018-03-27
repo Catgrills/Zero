@@ -34,7 +34,7 @@ Instruction
 
 <strong>Step 3 : Install others scripts </strong>
 <ol>
-<li>Intall <a href="https://greasyfork.org/en/scripts/3575-better-better-booru">Better Better Booru</a></li>
+<li>Intall <a href="https://greasyfork.org/en/scripts/3575-better-better-booru">Better Better Booru</a> (Optional)</li>
 <li>Install <a href="https://greasyfork.org/en/scripts/32347-danbooru-bigger-thumbnails-and-others">Danbooru Bigger Illustration and Others</a></li>
 </ol>
 
