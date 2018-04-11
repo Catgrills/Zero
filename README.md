@@ -28,7 +28,7 @@ Instruction
 <strong>Step 2 : Install the script </strong>
 <ol>
 <li> manually (<a href="https://pastebin.com/N3mPSnGZ">light version</a> or <a href="https://pastebin.com/v4fzDyBX">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
-<li><b>(NEW) STYLUS ONLY</b> : Import <a href="https://mega.nz/#F!4TIBUTaK!68UQF79dszA23h5snooTRw">zero-a.json</a> in Stylus by clicking the button <i>Import Styles</i>. You can change theme by clicking the gear icon next to the script name in the managment styles page.</li>
+<li><b>(NEW) STYLUS ONLY</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here</a>.</li>
 </ol>
 
 
