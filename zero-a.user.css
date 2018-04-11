@@ -8,7 +8,7 @@
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-        --body-bg: #EEE !important; 
+        	--body-bg: #EEE !important; 
 		--card-bg: #F5F5F5 !important;
 		--card-bg-2: #FFF !important;
 		--border-color: #BEBEBE !important;
@@ -18,7 +18,7 @@
 	`,
 	"Dark":`
 	:root {
-	    --body-bg: #254441 !important; 
+	        --body-bg: #254441 !important; 
 		--card-bg: #25373D !important;
 		--card-bg-2: #092327 !important;
 		--border-color: #000 !important;
