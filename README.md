@@ -21,7 +21,7 @@ Instruction
 + for Google Chrome : <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a> or <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en">Stylus</a>
 + for Opera : <a href="https://addons.opera.com/en/extensions/details/stylish/">Stylish</a> or <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Stylus</a>
 + for Safari : <a href="http://sobolev.us/stylish/">Stylish</a>
-+ for Dolphin : <a href="https://play.google.com/store/apps/details?id=ru.pmmlabs.stylish&amp;hl=en">Stylish</a
++ for Dolphin : <a href="https://play.google.com/store/apps/details?id=ru.pmmlabs.stylish&amp;hl=en">Stylish</a>
 
 <strong>Step 2 : Install the script </strong>
 + Manually : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-dark.css">Dark theme</a> or <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-light.css">Light theme</a>
