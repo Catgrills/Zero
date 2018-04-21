@@ -29,8 +29,8 @@ Instruction
 <ol>
 <li>Manually : create a new style in Stylish/Stylus and paste the script in it.
   <ol>
-    <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-dark.css">Zero-A dark version</a></li>
-    <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-light.css">Zero-A light version </a></li>
+    <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-dark.css">Zero-A dark theme</a></li>
+    <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-light.css">Zero-A light theme</a></li>
   </ol>
 </li>
 <li>Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here.</a>
