@@ -33,7 +33,7 @@ Instruction
     <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-light.css">Zero-A light theme</a></li>
   </ol>
 </li>
-<li>Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here.</a>
+<li>Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here</a>
 </ol>
 
 <strong>Step 3 : Install others scripts </strong>
