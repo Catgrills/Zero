@@ -27,10 +27,14 @@ Instruction
 
 <strong>Step 2 : Install the script </strong>
 <ol>
-<li> manually (<a href="https://pastebin.com/N3mPSnGZ">light version</a> or <a href="https://pastebin.com/v4fzDyBX">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
-<li><b>(NEW) STYLUS ONLY</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here</a>.</li>
+<li>Manually : create a new style in Stylish/Stylus and paste the script in it.
+  <ol>
+    <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-dark.css">Zero-A dark version</a></li>
+    <li><a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-light.css">Zero-A light version </a></li>
+  </ol>
+</li>
+<li>Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here.</a>
 </ol>
-
 
 <strong>Step 3 : Install others scripts </strong>
 <ol>
