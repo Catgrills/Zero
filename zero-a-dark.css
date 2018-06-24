@@ -4,9 +4,10 @@
 
 	/** DESCRIPTION : set the colors **/
 	:root {
-		--body-bg: #254441 !important;
+		--body-bg: #282C34 !important;
 		--card-bg: #25373D !important;
-		--card-bg-2:#092327 !important;
+		--card-bg-2:#3E444E !important;
+		--op-bg: rgba(37, 55, 61, .98) !important;
 		--border-color: #000 !important;
 		--primary-color: #FFF !important;
 		--secondary-color: #EBEBEB !important;
@@ -15,6 +16,7 @@
 	/* GENERAL */
 
 	/** DESCRIPTION : set the main font and change others elements **/
+
 	* {
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
@@ -31,79 +33,343 @@
 		white-space: nowrap;
 	}
 
-	html {
-		overflow-x: hidden !important;
-	}
-
 	body,
 	#page {
 		background: var(--body-bg) !important;
 	}
 
-	#upgrade-account-notice {
-		display: none !important;
+	a:link {
+
+		/*** LINK COLORS ***/
+		color: #2C82C9;
 	}
 
-	article img,
-	.preview img {
+	.category-1 a {
+		color: #E26A6A;
+	}
+
+	.category-3 a {
+		color: #913D88;
+	}
+
+	.category-4 a {
+		color: #00B16A;
+	}
+
+	.category-5 a {
+		color: #F4B350;
+	}
+
+	.ui-button:hover {
+
+		/*** BUTTONS ***/
+		transform: translateY(0px) !important;
+	}
+
+	.new-comment a,
+	#new-response-link {
+		background: #2C82C9;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: #FFF;
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 8px 12px;
+	}
+
+	#sidebar button {
+		background: #2C3E50;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
+		padding-top: 6px;
+		padding-bottom: 6px !important;
+	}
+
+	.simple_form.inline-form input[value="Search"],
+	.search input[value="Search"],
+	#search input[value="Search"],
+	.input #submit-button {
+		background: #1BA39C !important;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 6px 10px;
+		margin-top: 20px;
+	}
+
+	.expandable-button,
+	#p-page-listing input {
+		background: #1BA39C;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 6px 12px;
+	}
+
+	.spoiler * {
+
+		/*** SPOILER ***/
+		color: transparent !important;
+	}
+
+	.spoiler:hover * {
+		color: #FFF !important;
+	}
+
+	.expandable {
+
+		/*** EXPANDABLE BOXES ***/
+		background: var(--card-bg);
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		padding: 8px 10px;
+	}
+
+	.expandable * {
+		font-weight: normal;
+		text-transform: capitalize;
+	}
+
+	.expandable .expandable-content {
 		border: none !important;
 	}
 
-	#posts .hidden-posts-notice {
-		visibility: hidden
-	}
+	blockquote,
+	.prose pre {
 
-	footer#page-footer {
-		display: none !important;
-	}
-
-	form.simple_form div.input input[type="text"],
-	form.simple_form div.input input[type="file"],
-	form.simple_form div.input input[type="password"],
-	form.simple_form div.input input[type="email"],
-	.input.select.optional select,
-	.search .input input,
-	.search .input select,
-	input[type="submit"] {
+		/*** BLOCKQUOTE ***/
 		background: var(--card-bg) !important;
 		border: 1px solid var(--border-color) !important;
-		border-radius: 2px !important;
-		padding: 5px !important;
-		margin-bottom: 5px !important;
-		color: var(--primary-color) !important;
-		font-stretch: condensed !important;
-		font-size: 14pt !important;
-		min-width: 100px !important;
 	}
 
-	.paginator li * {
-		background: var(--card-bg) !important;
+	#c-favorites #a-index #content h1,
+	#comments h2,
+	.hint,
+	menu a[href="/user_upgrade/new"],
+	#nav-links,
+	#nav #site-map-link,
+	#open-edit-dialog,
+	#page #upgrade-account-notice,
+	#page-footer,
+	.paginator .arrow,
+	#p-index-by-post h2,
+	.tn.hidden-posts-notice,
+	#add-fav-button,
+	#remove-fav-button {
+		display: none !important;
+	}
+
+	/* PAGINATOR */
+
+	/** DESCRIPTION : change the elements of the paginator **/
+	.paginator li {
+		margin-right: -5px;
+	}
+
+	.paginator li a,
+	.paginator li span {
+		background: var(--card-bg-2);
 		border: none !important;
-		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		color: var(--secondary-color);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+
+	.paginator * {
+		color: var(--primary-color) !important;
 		font-size: 14pt;
-		font-stretch: condensed !important;
+		font-stretch: condensed;
+	}
+
+	.paginator .current-page * {
+		font-weight: normal;
+		opacity: .5;
 	}
 
 	.paginator li a:hover {
-		color: #2CC990 !important;
+		color: #FFF !important;
 	}
 
-	.paginator .current-page span {
-		color: #2CC990;
-		font-size: 14pt !important;
+	/* DIALOG */
+
+	/** DESCRIPTION : change the elements of the dialog page **/
+	.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .5) !important;
+		padding: 15px !important;
+	}
+
+	.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+		background: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+		border: none !important;
+		background-color: transparent !important;
+		margin-top: -11px !important;
+		margin-right: 3px !important;
+	}
+
+	.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable label {
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable input {
+		background: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 2px 5px 5px 5px;
+	}
+
+	.ui-dialog .ui-dialog-buttonpane {
+		background: transparent !important;
+		border: none !important;
+	}
+
+	.ui-dialog .ui-dialog-buttonpane button {
+		background: var(--card-bg);
+		border: none !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 8px 12px !important;
+	}
+
+	/* BETTER BOORU SETTINGS */
+
+	/** DESCRIPTION : change the elements of better booru settings **/
+	#bbb-menu {
+		background: var(--op-bg);
+		border: none !important;
+		height: 100% !important;
+		width: 100% !important;
+		top: 0px !important;
+		right: 0px !important;
+		left: 0px !important;
+		margin: auto !important;
+	}
+
+	#bbb-menu h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+	}
+
+	.bbb-tab {
+		border: 1px solid var(--border-color) !important;
+		border-radius: 1px !important;
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+		padding: 10px 10px 12px 10px !important;
+	}
+
+	#bbb-menu .bbb-active-tab {
+		background: var(--card-bg-2);
+	}
+
+	#bbb-menu .bbb-scroll-div {
+		background: var(--card-bg-2) !important;
+		border: 1px solid var(--border-color) !important;
+		width: 90% !important;
+		max-height: 70% !important;
+		overflow: hidden;
+		overflow-y: scroll !important;
+		padding: 10px 0px 10px 10px !important;
+	}
+
+	#bbb-menu .bbb-scroll-div .bbb-page h2 {
+		color: var(--primary-color) !important;
+		border-bottom: 1px dotted var(--border-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
 		font-weight: normal !important;
+		padding-bottom: 10px !important;
 	}
 
-	.paginator .arrow {
-		display: none !important;
+	#bbb-menu .bbb-scroll-div .bbb-page .bbb-section-options {
+		margin-bottom: 20px;
+	}
+
+	#bbb-menu .bbb-section-options-left {
+		border-right: 1px dotted var(--border-color);
+	}
+
+	#bbb-menu .bbb-scroll-div .bbb-page .bbb-general-label:hover {
+		background-color: var(--card-bg);
+	}
+
+	#bbb-menu .bbb-scroll-div .bbb-page .bbb-section-options * {
+		color: var(--secondary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+	}
+
+	#bbb-menu .bbb-section-options,
+	#bbb-menu .bbb-section-text,
+	#bbb-menu .bbb-section-text * {
+		color: var(--secondary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		line-height: 20pt !important;
+	}
+
+	#bbb-menu .bbb-list-div,
+	#bbb-menu .bbb-list-settings {
+		background: var(--body-bg);
+	}
+
+	#bbb-menu .bbb-list-button {
+		border: none;
+	}
+
+	#bbb-menu .bbb-scroll-div .bbb-page input,
+	#bbb-menu .bbb-scroll-div .bbb-page select,
+	#bbb-menu .bbb-scroll-div .bbb-page textarea {
+		background-color: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+	}
+
+	#bbb-menu .bbb-scroll-div .bbb-page select {
+		height: 25px;
+	}
+
+	.bbb-button {
+		background: var(--body-bg) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		padding: 8px 12px !important;
 	}
 
 	/* HEADER */
 
 	/** DESCRIPTION : change the elements of the header **/
-	header#top h1 {
+	#top h1 {
 
 		/*** HEADER CONTAINER ***/
 		background-color: #2CC990 !important;
@@ -118,14 +384,14 @@
 		transition: margin-left .5s;
 	}
 
-	header#top h1 a {
+	#top h1 a {
 		font-size: 14pt !important;
 		width: 100% !important;
 		color: #FFF !important;
 		visibility: hidden;
 	}
 
-	header#top h1 a::after {
+	#top h1 a::after {
 
 		/*** HEADER TITLE ***/
 		content: "DANBOORU 段ボール" !important;
@@ -135,7 +401,7 @@
 		position: absolute !important;
 		left: 0px !important;
 		right: 0px !important;
-		margin: 10px auto !important;
+		margin: 11px auto !important;
 		visibility: visible !important;
 	}
 
@@ -153,12 +419,13 @@
 		z-index: 999 !important;
 	}
 
-	header#top menu {
+	#top menu {
 		background: transparent !important;
 		margin-top: -10px !important;
 	}
 
-	header#top menu li {
+	#top menu li {
+		font-size: 0pt;
 		width: 100% !important;
 		overflow: hidden;
 		white-space: nowrap !important;
@@ -166,7 +433,7 @@
 		padding: 0px 0px 9px 0px !important;
 	}
 
-	header#top menu li a {
+	#top menu li a {
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
@@ -174,12 +441,12 @@
 		transition: all .3s ease-in-out !important;
 	}
 
-	header#top menu li a:hover {
+	#top menu li a:hover {
 		color: #BEBEBE !important;
 		transition: all .3s ease-in-out !important;
 	}
 
-	header#top menu.main li.current a {
+	#top menu.main li.current a {
 		background: transparent !important;
 		color: #BEBEBE !important;
 	}
@@ -210,6 +477,7 @@
 	}
 
 	.ui-autocomplete {
+		background: var(--card-bg-2) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 	}
@@ -218,646 +486,11 @@
 		margin: 0px !important;
 	}
 
-	/* ACCOUNT */
+	/* SEARCHBAR */
 
-	/** DESCRIPTION : change the elements of the account page **/
-	#c-users #a-show {
+	/** DESCRIPTION : change the elements of the search bar **/
 
-		/*** ACCOUNT MAIN CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 95% !important;
-		padding: 12px 20px !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 65px auto !important;
-	}
-
-	#c-users #a-show .user-member {
-		color: #2C82C9 !important;
-		font-stretch: condensed !important;
-		text-transform: capitalize !important;
-		margin-bottom: -40px !important;
-	}
-
-	#c-users #a-show h1,
-	#c-users #a-show h2,
-	#c-users #a-show h3,
-	#c-users #a-show h4,
-	#c-users #a-show strong {
-		color: var(--primary-color);
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-		margin-bottom: 10px !important;
-	}
-
-	#c-users > #a-show > div:nth-of-type(1) {
-		border-top: 1px solid var(--border-color) !important;
-		padding: 20px 30px 0px 30px !important;
-		margin-top: 15px !important;
-		margin-left: -20px !important;
-		margin-right: -20px !important;
-	}
-
-	#c-users #a-show table.user-statistics * {
-		color: var(--secondary-color);
-		font-size: 15pt;
-		font-stretch: condensed;
-	}
-
-	#c-users #a-show table.user-statistics th {
-		color: var(--primary-color) !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-		text-align: left !important;
-		text-transform: Capitalize !important;
-	}
-
-	#c-users #a-show .box.user-favorites {
-		border-top: 1px solid var(--border-color) !important;
-		padding: 20px 30px 0px 30px !important;
-		margin-top: 30px !important;
-		margin-left: -20px !important;
-		margin-right: -20px !important;
-	}
-
-	#c-users #a-show .box.user-favorites a {
-		color: #5C9F97 !important;
-	}
-
-	#options-box {
-		display: none !important;
-	}
-
-	/* ARTIST/TAG/POOL/WIKI/NOTES/SEARCHES/CHANGES/UPLOADS/APPEALS/ETC */
-
-	/** DESCRIPTION : change the elements of the artist/tag/poll/notes/searches/changes/etc page **/
-	#c-artists #a-index,
-	#c-tags #a-index,
-	#c-pools #a-index,
-	#c-notes #a-index,
-	#c-wiki-pages #a-index,
-	#c-wiki-page-versions #a-index,
-	#c-uploads #a-index,
-	#c-post-appeals #a-index,
-	#c-post-flags #a-index,
-	#c-post-replacements #a-index,
-	#c-notes-versions #a-index,
-	#c-artist-versions #a-index,
-	#c-artist-commentary-versions #a-index,
-	#c-artist-commentaries #a-index,
-	#c-post-versions #a-index,
-	#c-explore-posts #a-searches,
-	#c-tag-aliases #a-index,
-	#c-tag-implications #a-index,
-	#c-tag-subscriptions #a-index,
-	#c-forum-topics #a-index,
-	#c-forum-posts #a-index,
-	#c-static #a-keyboard-shortcuts,
-	#c-static #a-bookmarklet,
-	#c-users #a-index,
-	#c-users #a-edit,
-	#c-user-feedbacks #a-index,
-	#c-bans #a-index,
-	#c-mod-actions #a-index,
-	#c-delayed-jobs #a-index,
-	#c-burs #a-index,
-	#c-janitor-trials #a-index,
-	#a-search,
-	#a-new,
-	#a-request-new,
-	.bulk-update-requests {
-
-		/*** ARTIST/TAG/POOL LIST MAIN CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 90% !important;
-		padding: 12px 20px !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 65px auto !important;
-	}
-
-	#c-artists #a-index .simple_form.inline-form,
-	#c-tags #a-index .simple_form.inline-form,
-	#c-post-appeals .simple_form.inline-form,
-	#c-post-flags #a-index .simple_form.inline-form,
-	#c-post-replacements #a-index .simple_form.inline-form,
-	#c-tag-aliases #a-index .simple_form.inline-form,
-	#c-tag-implications #a-index .simple_form.inline-form {
-
-		/*** ARTIST/TAG/POOL LIST SEARCH ***/
-		margin-top: 5px !important;
-	}
-
-	#c-pools #a-index .search {
-		margin-top: 5px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#c-pools #a-gallery .search {
-		margin-top: 75px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#c-pools #a-index .search th,
-	#c-pools #a-gallery .search th {
-		text-align: left !important;
-	}
-
-	#c-pools #a-index .search label,
-	#c-pools #a-gallery .search label {
-		font-stretch: condensed !important;
-	}
-
-	#c-pools #a-index .search *,
-	#c-pools #a-gallery .search * {
-		color: var(--primary-color);
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-	}
-
-	#c-wiki-pages #a-index #content h1,
-	#c-wiki-page-versions #a-index #content h1 {
-		display: none !important;
-	}
-
-	#c-wiki-pages #a-index #content,
-	#c-wiki-page-versions #a-index #content {
-		margin-top: 10px !important;
-	}
-
-	#c-wiki-pages #a-index #sidebar h1,
-	#c-wiki-page-versions #a-index #sidebar h1 {
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-		margin-bottom: 10px !important;
-		margin-top: 5px !important;
-	}
-
-	#c-notes #a-index h1,
-	#c-notes-versions #a-index h1,
-	#c-artist-versions #a-index h1,
-	#c-artist-commentary-versions #a-index h1,
-	#c-artist-commentaries #a-index h1,
-	#c-post-versions #a-index h1,
-	#c-post-appeals #a-index h1,
-	#c-post-flags #a-index h1,
-	#c-post-replacements #a-index h1,
-	#c-explore-posts #a-searches h1,
-	#c-forum-topics #a-index h1,
-	#c-forum-posts #a-index h1,
-	#c-static #a-keyboard-shortcuts > h1,
-	#c-static #a-bookmarklet h1,
-	#c-tag-subscriptions #a-index h1,
-	#c-users #a-index h1,
-	#c-users #a-edit h1,
-	#c-user-feedbacks #a-index h1,
-	#c-bans #a-index h1,
-	#c-mod-actions #a-index h1,
-	#c-delayed-jobs #a-index h1,
-	#c-burs #a-index h1,
-	#c-janitor-trials #a-index h1,
-	#a-search h1,
-	#a-request-new h1,
-	#a-new h1,
-	.bulk-update-requests h1 {
-		color: var(--primary-color);
-		font-size: 17pt !important;
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-		margin-bottom: 10px !important;
-	}
-
-	#a-index > p:nth-of-type(1) {
-		color: var(--secondary-color);
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-	}
-
-	#c-artists #a-index .striped,
-	#c-tags #a-index .striped,
-	#c-pools #a-index .striped,
-	#c-notes #a-index .striped,
-	#c-wiki-pages #a-index .striped,
-	#c-wiki-page-versions #a-index .striped,
-	#c-uploads #a-index .striped,
-	#c-post-appeals #a-index .striped,
-	#c-post-flags #a-index .striped,
-	#c-post-replacements #a-index .striped,
-	#c-notes-versions #a-index .striped,
-	#c-artist-versions #a-index .striped,
-	#c-artist-commentary-versions #a-index .striped,
-	#c-artist-commentaries #a-index .striped,
-	#c-post-versions #a-index .striped,
-	#c-explore-posts #a-searches .striped,
-	#c-tag-aliases #a-index .striped,
-	#c-tag-sibscriptions #a-index .striped,
-	#c-forum-topics #a-index .striped,
-	#c-forum-posts #a-index .striped,
-	#c-users #a-index .striped,
-	#c-user-feedbacks #a-index .striped,
-	#c-bans #a-index .striped,
-	#c-mod-actions #a-index .striped,
-	#c-delayed-jobs #a-index .striped,
-	#c-burs #a-index .striped,
-	#c-janitor-trials #a-index .striped {
-
-		/*** ARTIST/TAG/POOL LIST TABLE ***/
-		background: var(--card-bg) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 100% !important;
-		margin-bottom: -1px !important;
-	}
-
-	table.striped tr.even,
-	table.striped tbody tr {
-		background: var(--card-bg) !important;
-		border: 1px solid var(--border-color) !important;
-	}
-
-	#c-uploads #a-index .striped {
-		margin-top: 10px !important;
-	}
-
-	#c-forum-posts #a-index .striped {
-		margin-top: 10px !important;
-		margin-bottom: -11px !important;
-	}
-
-	#c-artists #a-index thead,
-	#c-tags #a-index thead,
-	#c-pools #a-index thead,
-	#c-notes #a-index thead,
-	#c-wiki-pages #a-index thead,
-	#c-wiki-page-versions #a-index thead,
-	#c-uploads #a-index thead,
-	#c-post-appeals #a-index thead,
-	#c-post-flags #a-index thead,
-	#c-post-replacements #a-index thead,
-	#c-notes-versions #a-index thead,
-	#c-artist-versions #a-index thead,
-	#c-artist-commentary-versions #a-index thead,
-	#c-artist-commentaries #a-index thead,
-	#c-post-versions #a-index thead,
-	#c-tag-aliases #a-index thead,
-	#c-tag-implications #a-index thead,
-	#c-explore-posts #a-searches thead,
-	#c-forum-topics #a-index thead,
-	#c-forum-posts #a-index thead,
-	#c-tag-subscriptions #a-index thead,
-	#c-users #a-index thead,
-	#c-user-feedbacks #a-index thead,
-	#c-bans #a-index thead,
-	#c-mod-actions #a-index thead,
-	#c-delayed-jobs #a-index thead,
-	#c-burs #a-index thead,
-	#c-janitor-trials #a-index thead {
-		display: none;
-	}
-
-	.striped td {
-		background: transparent !important;
-		color: var(--primary-color);
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-	}
-
-	#c-artists #a-index hr,
-	#c-tags #a-index hr,
-	#c-pools #a-index hr,
-	#c-notes #a-index hr,
-	#c-wiki-pages #a-index hr,
-	#c-wiki-page-versions #a-index hr,
-	#c-uploads #a-index hr,
-	#c-post-appeals #a-index hr,
-	#c-post-flags #a-index hr,
-	#c-post-replacements #a-index hr,
-	#c-post-notes-versions #a-index hr,
-	#c-artist-versions #a-index hr,
-	#c-artist-commentary-versions #a-index hr,
-	#c-artist-commentaries #a-index hr,
-	#c-artist-commentaries #a-index hr,
-	#c-versions #a-index hr,
-	#c-tag-aliases #a-index hr,
-	#c-tag-implications #a-index hr,
-	#c-forum-topics #a-index hr,
-	#c-forum-posts #a-index hr,
-	#c-users #a-index hr,
-	#c-user-feedbacks #a-index hr,
-	#c-bans #a-index hr,
-	#c-mod-actions #a-index hr,
-	#c-delayed-jobs #a-index hr,
-	#c-burs #a-index hr,
-	#c-janitor-trials #a-index hr {
-
-		/*** ARTIST LIST PAGINATION/HR ***/
-		visibility: hidden;
-	}
-
-	#c-artists #a-show {
-
-		/*** ARTIST MAIN CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 90% !important;
-		padding: 12px 20px !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 65px auto !important;
-	}
-
-	#c-artists #a-show h1,
-	#c-artists #a-show h2,
-	#c-artists #a-show h3,
-	#c-artists #a-show h4,
-	#c-artists #a-show strong {
-		color: var(--primary-color);
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-		margin-bottom: 10px !important;
-	}
-
-	#c-artists #a-show ul li,
-	#c-artists #a-show ul li * {
-		color: var(--primary-color);
-		font-size: 16pt !important;
-		font-stretch: condensed !important;
-	}
-
-	#c-artists #a-show h1 a {
-		text-transform: capitalize !important;
-	}
-
-	#c-artists #a-show .prose {
-		border-top: 1px solid var(--border-color) !important;
-		padding: 20px 30px 0px 20px !important;
-		margin-top: 15px !important;
-		margin-left: -20px !important;
-		margin-right: -20px !important;
-	}
-
-	#c-artists #a-show .recent-posts {
-		border-top: 1px solid var(--border-color) !important;
-		padding: 20px 30px 0px 30px !important;
-		margin-top: 30px !important;
-		margin-left: -20px !important;
-		margin-right: -20px !important;
-	}
-
-	/* SITE MAP */
-
-	/** DESCRIPTION : change the elements of the site map page **/
-	#c-static #a-site-map {
-
-		/*** SITE MAP MAIN CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 90% !important;
-		padding: 12px 20px !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 65px auto !important;
-	}
-
-	#c-static #a-site-map h1,
-	#c-static #a-site-map h2,
-	#c-static #a-site-map h3,
-	#c-static #a-site-map h4,
-	#c-static #a-site-map strong {
-		color: var(--primary-color) !important;
-		font-size: 16pt !important;
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-		margin-bottom: 10px !important;
-	}
-
-	#a-site-map li a {
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-		line-height: 20pt !important;
-	}
-
-	/* WIKI */
-
-	/** DESCRIPTION : change the elements of the wiki page **/
-	#c-wiki-pages #a-show {
-
-		/*** WIKI MAIN CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 90% !important;
-		padding: 12px 20px !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 65px auto !important;
-	}
-
-	#c-wiki-pages #a-show h1,
-	#c-wiki-pages #a-show h2,
-	#c-wiki-pages #a-show h3,
-	#c-wiki-pages #a-show h4,
-	#c-wiki-pages #a-show strong {
-		color: var(--primary-color);
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal;
-		text-transform: uppercase !important;
-		margin-bottom: 20px !important;
-	}
-
-	#c-wiki-pages #content * {
-		color: var(--primary-color);
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-	}
-
-	.wiki-other-name {
-		background: #2CC990 !important;
-		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		padding-right: 10px !important;
-		padding-left: 10px !important;
-	}
-
-	#wiki-page-body {
-		margin-top: -9px !important;
-		margin-left: -20px !important;
-	}
-
-	#wiki-page-body .expandable {
-		border: 1px solid #212121 !important;
-	}
-
-	#c-wiki-pages #a-show #wiki-page-title {
-		margin-top: 5px !important;
-		margin-left: -25px !important;
-	}
-
-	#wiki-page-posts {
-		margin-left: -14px !important;
-	}
-
-	#wiki-page-posts .wiki-other-name {
-		display: none !important;
-	}
-
-	#c-posts #a-index #excerpt .wiki-other-name {
-		background-color: var(--card-bg-2) !important;
-		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		padding: 5px 7px !important;
-		margin-right: 5px !important;
-	}
-
-	#c-wiki-pages .post-preview {
-		border: 2px solid var(--border-color);
-		height: 100% !important;
-		float: left !important;
-		margin: 10px 0px 10px 10px !important;
-	}
-
-	#c-wiki-pages #a-show #sidebar {
-
-		/*** WIKI SIDEBAR ***/
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-		margin-top: 5px !important;
-		margin-left: 0px !important;
-	}
-
-	/* UPLOAD */
-
-	/** DESCRIPTION : change the elements of the upload page **/
-	#c-uploads #a-new {
-
-		/*** UPLOAD MAIN CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		width: 90% !important;
-		padding: 12px 20px !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 65px auto !important;
-	}
-
-	#c-uploads #a-new h1,
-	#c-uploads #a-new h2,
-	#c-uploads #a-new h3,
-	#c-uploads #a-new h4,
-	#c-uploads #a-new strong {
-		color: var(--primary-color) !important;
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-		margin-bottom: 10px !important;
-	}
-
-	#a-new p {
-		color: var(--secondary-color) !important;
-		font-size: 16pt !important;
-		font-stretch: condensed !important;
-	}
-
-	/* LISTING */
-
-	/** DESCRIPTION : change the elements in the listing page **/
-	#c-posts #a-index #excerpt {
-
-		/*** LISTING ARTIST CONTAINER ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		color: var(--primary-color);
-		font-size: 15pt;
-		font-stretch: condensed;
-		padding: 20px !important;
-		width: 90% !important;
-		position: absolute !important;
-		top: 120px !important;
-		right: 0px !important;
-		left: 0px !important;
-		margin: auto !important;
-	}
-
-	#c-posts #a-index h1,
-	#c-posts #a-index h2,
-	#c-posts #a-index h3,
-	#c-posts #a-index h4,
-	#c-posts #a-index strong {
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
-	}
-
-	#c-posts #posts {
-
-		/*** LISTING ILLUSTRATION CONTAINER ***/
-		width: 100% !important;
-		padding-bottom: 90px !important;
-		text-align: center !important;
-		position: absolute !important;
-		left: 0px;
-		right: 0px !important;
-		margin: 125px auto !important;
-	}
-
-	#c-posts #posts div {
-		display: inline !important;
-	}
-
-	#c-posts #posts article,
-	#c-artists .post-preview,
-	#c-users .post-preview {
-
-		/*** LISTING THUMBNAILS ***/
-		background: var(--card-bg);
-		border: 2px solid var(--border-color);
-		height: 100% !important;
-		float: none !important;
-		margin: 10px 0px 10px 10px !important;
-	}
-
-	#heart-icon {
-
-		/*** LISTING FAVORITE ICON ***/
-		background: no-repeat url('https://i.imgur.com/wu2OcFV.pngg') center !important;
-		background-size: 22px auto !important;
-		opacity: .7 !important;
-	}
-
-	#posts a img {
-		border: none !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-	}
-
-	#c-posts #posts hr {
-
-		/*** LISTING PAGINATION/HR ***/
-		visibility: hidden;
-	}
-
-	#c-posts #posts .paginator {
-		position: absolute;
-		bottom: 0px !important;
-		left: 0px;
-		right: 0px;
-	}
-
-	#c-posts #a-index #sidebar #tag-box,
-	#c-posts #a-index #sidebar #related-box {
-
-		/*** LISTING SIDEBAR BOXES ***/
-		display: none !important;
-	}
-
-	#c-posts #a-index #sidebar #search-box {
-
-		/*** LISTING SEARCH BOX ***/
+	#sidebar #search-box {
 		width: 100% !important;
 		position: fixed !important;
 		top: 44px !important;
@@ -867,10 +500,10 @@
 		z-index: 99 !important;
 	}
 
-	#c-posts #a-index #sidebar #search-box input[type='text'] {
+	#sidebar #search-box input[type='text'] {
 		background: var(--card-bg) !important;
 		border: none !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
@@ -878,23 +511,18 @@
 		width: 100% !important;
 	}
 
-	.ui-widget-content {
-		background: #FFF !important;
+	.ui-menu.ui-widget.ui-widget-content {
+		background: var(--card-bg-2) !important;
 		border: none !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		padding: 8px 25px 10px 7px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 8px 20px 10px 0px !important;
 	}
 
-	.ui-widget-content li {
-		background: inherit !important;
-		border: transparent !important;
+	.ui-menu-item:hover {
+		background: var(--card-bg) !important;
 	}
 
-	.ui-widget-content li:hover {
-		background: inherit !important;
-	}
-
-	#c-posts #a-index #expand-search {
+	#expand-search {
 		background-image: url("https://i.imgur.com/ZHtOY2h.png") !important;
 		background-position: center !important;
 		background-repeat: no-repeat !important;
@@ -916,218 +544,158 @@
 		margin-top: -80px !important;
 	}
 
-	#c-posts #sidebar #search-box h1,
-	#c-posts #sidebar #search-box input[value='Go'] {
+	#sidebar #search-box h1,
+	#sidebar #search-box input[value='Go'] {
 		display: none !important;
 	}
 
-	#c-posts #a-index #post-sections {
+	/* GALLERY */
 
-		/*** LISTING MENU ***/
+	/** DESCRIPTION : change the elements of the gallery page **/
+	#c-favorites,
+	#c-posts {
+
+		/*** GALLERY CONTAINER ***/
+		margin-top: 120px !important;
+	}
+
+	#c-posts #a-show {
+		margin-top: -15px;
+	}
+
+	#c-favorites #content,
+	#c-posts #content {
+
+		/*** GALLERY MAIN CONTENT ***/
+		border-left: 1px dotted var(--border-color) !important;
+		padding-left: 40px !important;
+		margin-left: 250px !important;
+	}
+
+	#c-favorites #post-sections,
+	#c-posts #post-sections {
+
+		/*** GALLERY MAIN CONTENT MENU ***/
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		text-transform: uppercase !important;
 		position: fixed;
 		top: 10px !important;
 		right: 0px !important;
-		z-index: 9999 !important;
+		z-index: 999 !important;
 	}
 
-	#c-posts #a-index #post-sections a {
+	#c-favorites #post-sections a,
+	#c-posts #post-sections a {
 		color: #FFF !important;
 		font-weight: bold !important;
 	}
 
-	#c-posts #a-index #post-sections .active a {
+	#c-favorites #post-sections .active a,
+	#c-posts #post-sections .active a {
 		color: #EBEBEB !important;
 	}
 
-	/* FAVORITE */
+	article.post-preview {
 
-	/** DESCRIPTION : change the elements of the favorite page **/
-	#c-favorites,
-	#c-favorite-groups {
-
-		/*** FAVORITE MAIN CONTAINER ***/
-		width: 100% !important;
-		padding-bottom: 90px !important;
-		text-align: center !important;
-		position: absolute !important;
-		left: -5px !important;
-		right: 0px !important;
-		margin: 90px auto !important;
-	}
-
-	#c-favorites #a-index #content {
-		margin-left: 0px !important;
-	}
-
-	#c-favorites #a-index #content h1 {
-
-		/*** FAVORITE MAIN CONTAINER TITLE ***/
-		display: none !important;
-	}
-
-	#c-favorites article {
-
-		/*** FAVORITE THUMBNAILS ***/
-		background: var(--card-bg);
-		border: 2px solid var(--border-color);
-		height: 100% !important;
-		margin: 10px !important;
-		float: none !important;
-	}
-
-	#c-favorites hr {
-
-		/*** FAVORITE PAGINATION/HR ***/
-		visibility: hidden !important;
-	}
-
-	#c-favorites #a-index #sidebar {
-
-		/*** FAVORITE SIDEBAR ***/
-		display: none;
-	}
-
-	/* POPULAR */
-
-	/** DESCRIPTION : change the elements of the popular page **/
-	#c-explore-posts #a-popular #popular-nav-links {
-
-		/*** POPULAR NAVIGATION HEADER ***/
-		background: #F9F9F9 !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		padding: 10px 15px 12px 15px !important;
-		position: fixed !important;
-		top: 39px !important;
-		right: 0px !important;
-		left: 0px !important;
-		z-index: 99 !important;
-	}
-
-	#c-explore-posts .period {
-		margin: 0 !important;
-	}
-
-	#c-explore-posts .period:nth-of-type(2) {
-		margin-left: 20px !important;
+		/*** GALLERY MAIN CONTENT POSTS THUMBNAILS ***/
+		border: none !important;
 		margin-right: 20px !important;
+		margin-bottom: 30px !important;
 	}
 
-	#c-explore-posts .period * {
-		color: #34495E !important;
+	article.post-preview img {
+		background: var(--card-bg-2);
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 	}
 
-	#c-explore-posts a.desc {
-		font-stretch: condensed !important;
-		font-weight: bold !important;
-		text-transform: uppercase !important;
+	#heart-icon {
+		background: no-repeat url('https://i.imgur.com/wu2OcFV.pngg') center !important;
+		background-size: 22px auto !important;
+		opacity: .7 !important;
 	}
 
-	#c-explore-posts #a-popular {
+	#content #excerpt {
 
-		/*** POPULAR ILLUSTRATION CONTAINER ***/
-		width: 100% !important;
-		text-align: center !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 125px auto !important;
-	}
-
-	#c-explore-posts #a-popular h1 {
-		display: none !important;
-	}
-
-	/* POOL */
-
-	/** DESCRIPTION : change the elements of the pool page **/
-	#c-pools #a-show {
-
-		/*** POOL MAIN CONTAINER ***/
-		width: 100% !important;
-		text-align: center !important;
-		position: absolute !important;
-		top: 100px !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: auto !important;
-	}
-
-	#c-pools #a-show h1,
-	#c-pools #a-show h2,
-	#c-pools #a-show h3,
-	#c-pools #a-show h4,
-	#c-pools #a-show h5 {
-
-		/*** POOL TITLE ***/
+		/*** GALLERY MAIN CONTENT ARTIST ***/ 
 		color: var(--primary-color);
-		font-size: 20pt !important;
-		font-stretch: condensed !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	#content #excerpt h4,
+	#content #excerpt h5 {
+		color: #2C82C9 !important;
 		font-weight: normal;
-		margin-top: -10px !important;
 	}
 
-	#c-pools #a-show #description p,
-	#c-pools #a-show #description ul li,
-	#c-pools #a-show #description ul li * {
-		color: var(--secondary-color);
+	#sidebar {
+
+		/*** GALLERY SIDEBAR ***/
+		border-right: 1px dotted var(--border-color);
+		padding-right: 40px;
+		padding-bottom: 20px;
+	}
+
+	#c-favorites #sidebar {
+		border: none;
+	}
+
+	#sidebar h1,
+	#sidebar h2 {
+		color: var(--primary-color) !important;
 		font-size: 16pt !important;
-		font-stretch: condensed !important;
-		margin-bottom: 20px;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
 	}
 
-	#c-pools #a-show article,
-	#c-pools #a-gallery article {
-
-		/*** POOL THUMBNAILS ***/
-		background: var(--card-bg);
-		border: 2px solid var(--border-color);
-		height: 100% !important;
-		float: none !important;
+	#sidebar ul *,
+	#disable-all-blacklists {
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
-	#c-pools #a-gallery article .desc {
-		background: var(--card-bg-2) !important;
-		color: #FFF !important;
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-		padding: 10px 0px !important;
-		margin-bottom: 0px !important;
+	#sidebar .post-count {
+		color: var(--secondary-color) !important;
+		opacity: .5;
 	}
 
-	#c-pools #a-show hr {
+	/* ILLUSTRATION */
 
-		/*** POOL HR ***/
-		display: none !important;
-	}
-
-	/* GALLERY */
-
-	/** DESCRIPTION : change the elements in the gallery page **/
+	/** DESCRIPTION : change the elements of the illustration page **/
 	#c-posts #a-show #content {
 
-		/*** GALLERY CONTAINER ***/
-		position: absolute !important;
-		top: 100px !important;
-		left: 0px !important;
-		right: 0px !important;
-		width: 95% !important;
-		margin: auto !important;
+		/*** ILLUSTRATION MAIN CONTENT ***/
+		border: none !important;
 	}
 
 	#c-posts .notice-resized {
 
-		/*** GALLERY NOTICE RESIZE BOX ***/
-		display: none !important;
+		/*** ILLUSTRATION MAIN CONTENT NOTICE RESIZE BOX ***/
+		background: #34495E !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
+		font-size: 15pt !important;
+		font-stretch: condensed !important;
+		position: relative !important;
+		top: 17px !important;
+		margin-left: 0px !important;
+	}
+
+	#close-resize-notice {
+		filter: brightness(0) invert(1) !important;
+		margin-top: 8px !important;
+		margin-right: 10px !important;
 	}
 
 	#c-posts div.notice.notice-parent,
 	#c-posts div.notice.notice-child {
 
-		/*** GALLERY PARENT/CHILD BOXES ***/
-		border-radius: 1px !important;
+		/*** ILLUSTRATION MAIN CONTENT PARENT/CHILD BOXES ***/
+		border-radius: 2px !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		height: 100% !important;
@@ -1147,8 +715,8 @@
 		margin-top: 12px !important;
 	}
 
-	.post-preview.post-status-has-parent img,
-	.post-preview.post-status-has-children img {
+	.notice .post-preview.post-status-has-parent img,
+	.notice .post-preview.post-status-has-children img {
 		border: none !important;
 	}
 
@@ -1164,64 +732,66 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 	}
 
+	#c-posts .current-post {
+		background: transparent;
+		opacity: .5;
+	}
+
 	#c-posts .notice-pending {
 
-		/*** GALLERY PENDING NOTICE ***/
+		/*** ILLUSTRATION MAIN CONTENT PENDING NOTICE ***/
 		background: #83D6DE !important;
 		border: none !important;
-		border-radius: 1px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		position: relative !important;
 		top: 17px !important;
 		margin-left: 0px !important;
-		margin-bottom: 20px !important;
 	}
 
 	#c-posts .notice.notice-flagged,
 	.ui-corner-all.ui-state-highlight.notice.notice-appealed {
 		border: none !important;
-		border-radius: 1px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		position: relative !important;
 		top: 17px !important;
 		margin-left: 0px !important;
-		margin-bottom: 20px !important;
 	}
 
 	#c-posts .notice-deleted {
 
-		/*** GALLERY DELETED NOTICE ***/
+		/*** ILLUSTRATION MAIN CONTENT DELETED NOTICE ***/
 		background: #FF6766 !important;
 		border: none !important;
-		border-radius: 1px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		position: relative !important;
 		top: 17px !important;
 		margin-left: 0px !important;
-		margin-bottom: 20px !important;
 		padding: 10px !important;
 	}
 
 	div#notice:not(.ui-state-error) {
 
-		/*** GALLERY FAVORITE POST NOTICE ***/
+		/*** ILLUSTRATION MAIN CONTENT FAVORITE POST NOTICE ***/
 		background: #3E4651 !important;
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		color: #FFF !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding: 15px 0px 15px 15px !important;
 		position: fixed !important;
-		top: 60px !important;
+		top: 114px !important;
 		left: 20px !important;
 		width: 300px !important;
 	}
@@ -1235,523 +805,809 @@
 		top: 11px;
 	}
 
-	#c-posts #a-show #image-container {
+	#c-posts #image-container {
 
-		/*** GALLERY IMAGE CONTAINER ***/
-		height: auto !important;
-		width: 100% !important;
-		text-align: center !important;
-		margin-left: -10px !important;
-		padding-top: 20px !important;
+		/*** ILLUSTRATION MAIN CONTENT IMAGE CONTAINER ***/  
+
+		margin-top: 35px !important;
 	}
 
-	#c-posts #a-show #content #image-container #image {
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		max-width: 90% !important;
+	#c-posts #content #image-container #image {
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 	}
 
-	#c-posts #a-show #content #image-container #information-btn {
-		background: #3D8EB9 !important;
+	#c-posts #artist-commentary {
+
+		/*** ILLUSTRATION MAIN CONTENT ARTIST COMMENT ***/
+		background: var(--card-bg) !important;
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
-		color: #FFF !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		font-weight: bold !important;
-		padding: 10px 15px !important;
-		width: 50% !important;
-		text-transform: uppercase !important;
-		margin-top: 10px !important;
-		margin-bottom: 10px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		padding: 15px 20px !important;
 	}
 
-	#image-container p.desc {
-
-		/*** GALLERY ILLUSTRATION DATA ***/
-		display: none !important;
-	}
-
-	#c-posts #a-show #post-sections {
-
-		/*** GALLERY POST SECTIONS CONTAINER ***/
-		display: none;
-	}
-
-	#c-posts #a-show #content #comments h2 {
-		display: none !important;
-	}
-
-	#c-posts #a-show #nav-links {
-
-		/*** GALLERY NAVIGATION LINKS ***/
-		display: none !important;
-	}
-
-	#c-posts #a-show #artist-commentary {
-
-		/*** GALLERY AUTHOR COMMENT ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		border-radius: 1px !important;
-		margin-left: -15px !important;
-		margin-bottom: -15px !important;
-	}
-
-	#artist-commentary h2 {
+	#c-posts #artist-commentary h2 {
 		color: var(--primary-color);
-		font-size: 20pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-		padding-left: 20px !important;
-		padding-top: 15px !important;
-	}
-
-	#artist-commentary #commentary-sections {
-		font-size: 17pt !important;
-		font-stretch: condensed !important;
-		padding-left: 15px !important;
-		padding-top: 5px !important;
-		margin-bottom: -5px !important;
-	}
-
-	#artist-commentary #commentary-sections * {
-		color: var(--secondary-color) !important;
-		font-size: 17pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-	}
-
-	#artist-commentary section,
-	#artist-commentary section .tn {
-		color: var(--primary-color);
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-		padding: 15px 15px 10px 20px !important;
-	}
-
-	#artist-commentary section * {
-		font-weight: normal !important;
-	}
-
-	#c-posts #a-show  .comment .info {
-		color: var(--primary-color);
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		font-style: normal !important;
-	}
-
-	#c-posts #a-show #comments {
-
-		/*** GALLERY COMMENTS ***/
-		position: absolute !important;
-		right: 0px !important;
-		left: 0px !important;
-		margin: 30px auto !important;
-	}
-
-	#c-posts #a-show #comments .comment {
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		padding: 20px !important;
-		width: inherit !important;
-		float: none !important;
-	}
-
-	#c-posts #a-show #comments .comment .author h1 * {
-		color: #2C82C9 !important;
-		font-size: 17pt !important;
+		font-size: 18pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal;
 	}
 
-	#c-posts #a-show #comments .comment time {
+	#c-posts #artist-commentary #commentary-sections {
+		color: transparent;
+		font-size: 14pt;
+		font-stretch: condensed;
+		margin-top: 10px;
+	}
+
+	#c-posts #artist-commentary #commentary-sections b {
 		color: var(--secondary-color);
-		font-size: 15pt;
-		font-stretch: condensed !important;
-		padding-top: 20px !important;
+		font-weight: normal;
 	}
 
-	#c-posts #a-show #comments .author * {
-		line-height: 30px !important;
+	#c-posts #artist-commentary #commentary-sections li.active a {
+		font-weight: normal !important;
+		opacity: .5;
 	}
 
-	#c-posts #a-show #comments .comments-for-post .list-of-comments .comment .content {
-		color: var(--primary-color);
-		font-size: 15pt !important;
+	#c-posts #artist-commentary #original-artist-commentary *,
+	#c-posts #artist-commentary #translated-artist-commentary * {
+		color: var(--secondary-color);
+		font-size: 14pt;
 		font-stretch: condensed;
 	}
 
-	#c-posts #a-show #comments .list-of-comments > p {
-		visibility: hidden;
-		margin-top: -50px !important;
-	}
+	.comments-for-post * {
 
-	.comments-for-post .row.notices {
-		font-stretch: condensed !important;
-		font-weight: bold !important;
-		text-align: center !important;
-		text-transform: uppercase !important;
-		margin-top: -10px !important;
-		margin-bottom: 40px !important;
-	}
-
-	.comments-for-post .row.notices * {
-		color: #5692BF !important;
+		/*** ILLUSTRATION MAIN CONTENT USERS COMMENTS ***/
+		color: var(--primary-color);
 		font-size: 14pt;
+		font-stretch: condensed;
 	}
 
-	.new-comment {
-		color: #83D6DE !important;
-		font-stretch: condensed !important;
-		font-weight: bold !important;
-		text-align: center !important;
-		text-transform: uppercase !important;
-		margin-bottom: 40px !important;
+	.comments-for-post .list-of-comments .comment {
+		background: var(--card-bg-2);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		padding: 15px 20px !important;
 	}
 
-	.new-comment .expand-comment-response {
-		background: no-repeat url("https://i.imgur.com/b9EG8CP.png") center !important;
-		background-size: 20px auto !important;
-		color: transparent;
+	.comments-for-post .list-of-comments .comment .user-member,
+	.comments-for-post .list-of-comments .comment .author * {
+		font-size: 17pt;
+		font-weight: normal;
 	}
 
-	form.simple_form div.input span.hint {
-		display: none !important;
+	.comments-for-post .list-of-comments .comment .author time {
+		font-size: 15pt !important;
 	}
 
-	form.simple_form div.input label {
-		display: none !important;
+	.comments-for-post .list-of-comments .comment .simple_form.edit_comment {
+		margin-top: 20px !important;
 	}
 
-	form.simple_form div.input textarea {
-		background: var(--card-bg) !important;
-		border: 1px solid var(--border-color) !important;
-		color: var(--primary-color) !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		width: 60% !important;
-		padding: 20px !important;
+	.comments-for-post textarea,
+	#forum_post_body {
+		background: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 20px;
 	}
 
-	.btn[value="Submit"],
-	input[value="Preview"] {
-		color: #FFF !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		font-weight: bold !important;
-		padding: 6px 20px !important;
-		text-transform: uppercase !important;
+	.comments-for-post input,
+	#new_forum_post input,
+	#c-wiki-pages #a-edit input {
+		background: #BF4A67;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: #FFF;
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 8px 12px;
+		margin-right: 5px;
+	}
+
+	.comments-for-post .btn,
+	#new_forum_post .btn,
+	#a-edit .btn,
+	#a-new .btn,
+	#a-new input[value="Submit"],
+	#c-new .btn,
+	#c-new .btn input[value="Submit"] {
+		background: #00587A !important;
 		margin-right: 5px !important;
 	}
 
-	.btn[value="Submit"] {
-		background: #3E4651 !important;
-		border: 1px solid #212121 !important;
+	#comment_do_not_bump_post {
+		margin-top: -4px !important;
 	}
 
-	input[value="Preview"] {
-		background: #2C82C9 !important;
-		border: 1px solid #00587A !important;
+	#c-posts #a-show #edit * {
+
+		/*** ILLUSTRATION MAIN CONTENT EDIT ***/
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
 	}
 
-	#c-posts #a-show #sidebar {
-
-		/*** GALLERY SIDEBAR ***/
-		background: rgba(248, 248, 248, .98) !important;
-		height: 100% !important;
-		width: 100% !important;
-		overflow: hidden;
-		padding-top: 10px !important;
-		position: fixed !important;
-		top: 0px !important;
-		left: 0px !important;
-		margin-right: 50px !important;
-		z-index: 9999 !important;
-		visibility: hidden;
-		overflow-y: scroll !important;
+	#c-posts #a-show #edit label,
+	#c-posts #a-show #edit h1 {
+		font-size: 16pt;
+		font-weight: normal;
 	}
 
-	#c-posts #a-show #sidebar #search-box input[type='text'] {
-
-		/*** GALLERY SIDEBAR SEARCH BOX INPUT ***/
-		background: #FFF !important;
-		border: 1px solid #BEBEBE !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		padding: 12px 15px !important;
-		width: 90% !important;
+	#c-posts #a-show #edit #source-info {
+		background: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 	}
 
-	#c-posts #a-show #expand-search {
-		background-image: url("https://i.imgur.com/ZHtOY2h.png") !important;
-		background-position: center !important;
-		background-repeat: no-repeat !important;
-		background-size: 14px auto !important;
-		border: 1px solid #BEBEBE !important;
-		border-radius: 1px !important;
-		color: transparent !important;
-		padding: 13px 15px 12px 15px !important;
-		margin-left: -4px !important;
+	#c-posts #a-show #edit input,
+	#c-posts #a-show #edit textarea,
+	#c-posts #a-show #edit #related-tags {
+		background: var(--card-bg-2);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		padding: 5px 10px !important;
 	}
 
-	#c-posts #a-show #sidebar #search-box,
-	#c-posts #a-show #sidebar #tag-list,
-	#c-posts #a-show #sidebar #post-information,
-	#c-posts #a-show #sidebar #post-options,
-	#c-posts #a-show #sidebar #post-history {
-		padding-left: 20px !important;
+	#c-posts #a-show #edit #related-tags em,
+	#c-posts #a-show #edit #related-tags em * {
+		color: var(--secondary-color) !important;
+		font-size: 16pt !important;
+		font-style: normal;
+		font-weight: normal;
 	}
 
-	#c-posts #a-show #sidebar h1,
-	#c-posts #a-show #sidebar h2 {
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		text-transform: uppercase !important;
+	#c-posts #a-show #edit #related-tags .selected {
+		color: #FFF !important;
+	}
+
+	#c-posts #a-show #edit button {
+		background: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		padding: 5px 10px !important;
+	}
+
+	#c-posts #a-show #sidebar h2:first-child {
+
+		/*** ILLUSTRATION SIDEBAR ***/
+		margin-top: -15px;
+	}
+
+	#c-posts #a-show #sidebar li {
+		color: var(--primary-color);
+	}
+
+	/* ACCOUNT */
+
+	/** DESCRIPTION : change the elements of the account page **/
+	#c-users {
+
+		/*** ACCOUNT CONTAINER ***/
+		margin-top: 70px;
+	}
+
+	#c-users h1,
+	#c-users h2 {
+		color: var(--secondary-color) !important;
+		font-size: 20pt !important;
+		font-stretch: condensed;
+		font-weight: normal;
 		margin-bottom: 10px !important;
 	}
 
-	#c-posts #a-show #sidebar ul li {
-		background: #FFF !important;
-		border: 1px solid #BEBEBE !important;
-		font-size: 14pt !important;
+	#c-users #a-show h1 *,
+	#c-users #a-show h2 * {
+		color: #2C82C9 !important;
+		font-size: 20pt !important;
+		font-weight: normal;
+	}
+
+	#c-users #a-show * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	/* COMMENTS */
+
+	/** DESCRIPTION : change the elements of the comments page **/
+	#c-comments #a-index > h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-top: 60px;
+	}
+
+	#c-comments #a-index .comments-for-post .header * {
+		font-weight: normal;
+	}
+
+	/* STRIPED TABLES */
+
+	/** DESCRIPTION : change the elements of the striped tables **/
+
+	.striped {
+		background: var(--card-bg);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+
+	.striped thead tr {
+		border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.striped thead * {
+		color: var(--primary-color) !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
+	}
+
+	.striped tbody tr:hover,
+	.striped .even,
+	.striped td {
+		background: var(--card-bg-2) !important;
+	}
+
+	.striped tbody tr {
+		border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.striped tbody tr *:not(a) {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	.striped .last-page {
+		color: var(--secondary-color);
+	}
+
+	/* SEARCH BOX */
+
+	/** DESCRIPTION : change the elements of the search box **/
+
+	.simple_form.inline-form,
+	.search {
+		background: var(--card-bg);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 20px !important;
+		margin-top: 70px !important;
+	}
+
+	.search {
+		border-collapse: initial !important;
+		margin-bottom: 15px;
+	}
+
+	.search tr {
+		height: 2.3em !important;
+	}
+
+	.simple_form.inline-form label,
+	.search label,
+	#search label {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
+	}
+
+	.simple_form.inline-form input,
+	.simple_form.inline-form select,
+	.search input,
+	.search select {
+		background: var(--card-bg-2);
+		border: 1px solid var(--border-color);
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	#search input {
+		background: var(--card-bg-2);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	/* NOTES */
+
+	/** DESCRIPTION : change the elements of the notes page **/
+	#c-notes {
+
+		/*** NOTES CONTAINER ***/
+		margin-top: 60px;
+	}
+
+	#c-notes #a-index > h1 {
+
+		/*** NOTES CONTENT ***/
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	/* ARTISTS */
+
+	/** DESCRIPTION : change the elements of the artists page **/
+	#c-artists #a-show,
+	#c-artists #a-banned,
+	#c-artist-versions {
+
+		/*** ARTISTS CONTAINER ***/
+		margin-top: 60px;
+	}
+
+	#c-artists #a-show h1,
+	#c-artists #a-show h1 * {
+
+		/*** ARTISTS CONTENT ***/
+		color: #2C82C9 !important;
+		font-size: 20pt;
+		font-weight: normal;
+		margin-bottom: 10px !important;
+	}
+
+	#c-artists #a-show *,
+	#c-artists #a-banned *:not(a) {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	#c-artists #a-banned h1,
+	#c-artist-versions h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	/* TAGS */
+
+	/** DESCRIPTION : change the elements of the tags page **/
+	#c-tags #a-edit {
+
+		/*** TAGS EDIT CONTAINER ***/
+		margin-top: 70px !important;
+		margin-bottom: 35px !important;
+	}
+
+	#c-tags #a-edit h1 {
+
+		/*** TAGS EDIT CONTENT ***/
+		color: #2C82C9 !important;
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px !important;
+	}
+
+	#c-tags #a-edit * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+	}
+
+	#c-tags #a-edit select {
+		background: var(--card-bg);
+		border: 1px solid var(--border-color);
+	}
+
+	#c-tags #a-edit .btn {
+		background: #1BA39C;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
+		padding: 6px 10px;
+	}
+
+	/* POOLS */
+
+	/** DESCRIPTION : change the elements of the pools page **/
+	#c-pools {
+
+		/*** POOLS CONTAINER ***/
+		margin-top: 70px !important;
+	}
+
+	#c-pools h1 {
+
+		/*** POOLS CONTENT ***/
+		color: var(--primary-color);
+		font-size: 20pt !important;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	#c-pools #a-show #description {
+		color: var(--secondary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	#c-pools #a-gallery .post-preview {
+		height: 230px !important;
+	}
+
+	#c-pools #a-gallery .post-preview a {
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	/* WIKI */
+
+	/** DESCRIPTION : change the elements of the wiki page **/
+	#c-wiki-pages,
+	#c-wiki-page-versions {
+
+		/*** WIKI CONTAINER ***/
+		margin-top: 70px !important;
+	}
+
+	#c-wiki-pages #content,
+	#c-wiki-page-versions #content {
+
+		/*** WIKI MAIN CONTENT ***/
+		border-left: 1px dotted var(--border-color) !important;
+		padding-left: 40px !important;
+		margin-left: 250px !important;
+	}
+
+	#c-wiki-pages #a-edit #content {
+		margin-left: 300px !important;
+	}
+
+	#c-wiki-pages #a-show #wiki-page-title,
+	#c-wiki-page-versions h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	#c-wiki-pages #a-show .wiki-other-name {
+		background: var(--card-bg-2);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 5px 10px;
+	}
+
+	#c-wiki-pages h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	#wiki-page-body h2,
+	#wiki-page-body h3,
+	#wiki-page-body h4,
+	#wiki-page-body h4 *,
+	#wiki-page-posts h2,
+	#wiki-page-posts h2 * {
+		color: #2C82C9 !important;
+		font-size: 20pt;
 		font-stretch: condensed !important;
-		display: inline-block !important;
-		padding: 5px 10px 6px 10px !important;
-		margin-right: 5px !important;
-		margin-bottom: 5px !important;
+		font-weight: normal;
 	}
 
-	#c-posts #a-show #sidebar #close-btn {
-		background: url('https://imgur.com/4GlrMN7.png') no-repeat 50% 50%;
-		background-size: 25px auto !important;
-		background-color: transparent !important;
-		border: none !important;
-		color: transparent !important;
-		position: fixed !important;
-		top: 20px !important;
-		right: 30px !important;
+	#wiki-page-body * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
 	}
 
-	#add-fav-button,
-	#remove-fav-button {
-		display: none !important;
+	#c-wiki-pages label {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
 	}
 
-	#c-posts #a-show #sidebar #add-to-favorites,
-	#c-posts #a-show #sidebar #remove-from-favorites {
-		display: block !important;
+	#c-wiki-pages textarea {
+		background: var(--card-bg-2);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 10px;
+	}
+
+	#c-wiki-page-versions #sidebar,
+	#c-wiki-pages #sidebar {
+		border: none;
 	}
 
 	/* FORUM */
 
 	/** DESCRIPTION : change the elements of the forum page **/
-	#c-forum-topics #a-show h1 {
+	#c-forum-topics {
 
-		/*** FORUM TOPIC TITLE ***/
-		background: var(--card-bg) !important;
-		border: none !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		color: var(--primary-color);
-		font-size: 16pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-		padding: 10px 15px 12px 15px !important;
-		position: fixed !important;
-		top: 44px !important;
-		left: 0px !important;
-		right: 0px !important;
+		/*** FORUM CONTAINER ***/
+		margin-top: 60px !important;
 	}
 
-	#c-forum-topics > #a-show > .info {
+	#c-forum-topics h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	#c-forum-topics #a-index p,
+	#c-forum-topics #a-index p *:not(a),#c-forum-topics .info {
 		color: var(--secondary-color);
+		font-size: 16pt;
+		font-stretch: condensed;
+		font-style: normal;
+	}
+
+	.new {
+		color: #2CC990 !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
-		font-style: normal !important;
-		position: fixed !important;
-		top: 20px !important;
-		right: 22px !important;
-	}
-
-	#c-forum-topics span.new {
-		color: #71BA51 !important;
-		font-weight: bold !important;
+		text-transform: lowercase !important;
 	}
 
 	.list-of-forum-posts {
-
-		/*** FORUM TOPIC POSTS ***/
-		margin-top: 125px !important;
+		margin-bottom: 30px !important;
 	}
 
-	#c-forum-topics #a-show .forum-post {
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		box-shadow: none !important;
-		padding: 20px !important;
-		margin-bottom: 10px !important;
+	.list-of-forum-posts .forum-post {
+		background: var(--card-bg-2);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 	}
 
-	#c-forum-topics #a-show .forum-post .author .user-post-uploader,
-	.author h4 a {
-		color: #2C82C9 !important;
-		font-size: 17pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-	}
-
-	.list-of-forum-posts article .author time {
-		color: var(--secondary-color) !important;
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-		font-style: normal !important;
-		line-height: 24pt !important;
-	}
-
-	.list-of-forum-posts .content * {
+	.list-of-forum-posts .forum-post *:not(a) {
 		color: var(--primary-color);
-		font-size: 15pt;
+		font-size: 14pt;
 		font-stretch: condensed;
 	}
 
-	blockquote {
-		background: var(--card-bg);
+	.list-of-forum-posts .forum-post .author * {
+		color: #2C82C9 !important;
+		font-size: 17pt;
+		font-weight: normal;
+	}
+
+	.list-of-forum-posts .forum-post .author time {
+		color: var(--secondary-color) !important;
+		font-size: 15pt !important;
+		font-style: normal;
+	}
+
+	.text.optional {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
+		margin-bottom: 10px;
+	}
+
+	/* UPLOAD */
+
+	/** DESCRIPTION : change the elements of the upload page **/
+	#c-uploads {
+
+		/*** UPLOAD CONTAINER ***/
+		margin-top: 70px !important;
+	}
+
+	#c-uploads h1 {
+
+		/*** UPLOAD CONTENT ***/
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+
+	#c-uploads * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	#source-info,
+	#c-uploads input,
+	#c-uploads textarea {
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+
+	#c-uploads textarea {
+		padding: 10px;
+	}
+
+	#c-uploads button {
+		background: var(--card-bg) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+
+	#c-uploads #filedropzone {
 		border-color: var(--border-color);
 	}
 
-	.forum-post .prose .expandable {
-		background: var(--card-bg);
-		border: 1px solid var(--border-color) !important;
+	/* OTHERS */
+
+	/** DESCRIPTION : change the elements of others pages **/
+	#c-artist-commentary-versions,
+	#c-comments #a-search,
+	#c-dmails,
+	#c-maintenance-user-passwords,
+	#c-meta-searches,
+	#c-note-versions,
+	#c-post-events,
+	#c-post-replacements,
+	#c-post-versions,
+	#c-related-tags {
+		margin-top: 60px;
 	}
 
-	.prose code {
-		background: var(--card-bg) !important;
-		color: var(--primary-color) !important;
+	#c-artist-commentary-versions h1,
+	#c-comments #a-search h1,
+	#c-dmails h1,
+	#c-meta-searches h1,
+	#c-note-versions h1,
+	#c-notes h1,
+	#c-post-events h1,
+	#c-post-replacements h1,
+	#c-post-versions h1,
+	#c-related-tags h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
 	}
 
-	.expandable-header {
-		padding-left: 14px !important;
+	#c-notes .search,
+	#c-comments .simple_form.inline-form,
+	#c-dmails .simple_form.inline-form,
+	#c-post-replacements .simple_form.inline-form {
+		margin-top: 10px !important;
 	}
 
-	.expandable-header * {
+	#c-counts {
+		margin-top: 70px;
+	}
+
+	#c-counts *,
+	#c-meta-searches * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	#c-post-versions #a-index p {
+		color: var(--secondary-color);
+		font-size: 16pt;
+		font-stretch: condensed;
+	}
+
+	#a-index,
+	#a-new,
+	#c-new {
+		margin-top: 70px !important;
+	}
+
+	#a-new h1,
+	#c-new h1,
+	#a-edit h1 {
+		color: var(--primary-color);
+		font-size: 20pt;
+		font-stretch: condensed;
+		font-weight: normal;
+	}
+
+	#a-edit #content h1 {
+		font-size: 20pt !important;
+	}
+
+	#a-new > p,
+	#c-new > p {
+		color: var(--secondary-color);
+		font-size: 16pt;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
-	.expandable-content pre {
-		border: 1px solid var(--border-color) !important;
-		padding: 10px 15px !important;
-		margin-top: 0px !important;
+	#a-edit *:not(a) {
+		color: var(--secondary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
-	.prose .expandable-content {
-		border-top: 1px solid var(--border-color) !important;
+	#a-edit #edit-options * {
+		font-size: 16pt;
 	}
 
-	#c-forum-topics #a-show .forum-post .info {
-		font-style: normal !important;
-		font-size: 15pt !important;
-	}
-
-	#c-forum-topics #a-show .list-of-forum-posts .forum-post .content .prose pre {
-		background: var(--card-bg) !important;
-		border: 1px solid var(--border-color) !important;
-		padding: 10px 15px !important;
-	}
-
-	input[value ='Show'],
-	input[value ='Hide'] {
-		background: var(--card-bg) !important;
-		border: 1px solid var(--border-color) !important;
+	#a-edit #edit-options .active {
 		color: var(--secondary-color) !important;
-		font-stretch: condensed !important;
-		font-weight: bold !important;
-		padding: 5px 15px 6px 15px !important;
-		text-transform: uppercase !important;
-		margin-right: 5px !important;
+		opacity: .6;
 	}
 
-	#c-forum-topics > #a-show > p {
-
-		/*** FORUM TOPIC REPLY BUTTON ***/
-		text-align: center !important;
-		margin-top: 40px !important;
-		margin-bottom: 50px !important;
-	}
-
-	#new-response-link {
-		background: no-repeat url("https://designmodo.com/wp-content/themes/designmodov2.1/flat-ui/images/join-conversation.png") center !important;
-		background-size: 20px auto !important;
-		color: transparent;
-		width: 100% !important;
-	}
-
-	#topic-response #new_forum_post {
-		text-align: center !important;
-		margin-bottom: 30px !important;
-	}
-
-	#c-forum-topics #a-show .paginator {
-
-		/*** FORUM PAGINATION ***/
-		margin-top: -30px !important;
-		margin-bottom: 30px !important;
-	}
-
-	/* COMMENTS */
-
-	/** DESCRIPTIN : change the elements of the comments page **/
-	#c-comments {
-		width: 90% !important;
-		position: absolute !important;
-		left: 0px !important;
-		right: 0px !important;
-		margin: 80px auto !important;
-	}
-
-	#c-comments #a-index h1,
-	#c-comments #a-index h2 {
-
-		/*** COMMENTS TITLES ***/
-		display: none !important;
-	}
-
-	#c-comments #a-index .post {
-
-		/*** COMMENTS POSTS ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		padding: 20px 20px 30px 20px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#c-comments #a-index .preview {
-
-		/*** COMMENTS THUMBNAILS ***/
-		border: 2px solid var(--border-color) !important;
-		height: 100% !important;
-		width: auto !important;
-	}
-
-	#c-comments #a-index .comments-for-post .header * {
+	#a-new label,
+	#c-new label,
+	#a-edit label {
 		color: var(--primary-color);
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-bottom: 10px;
 	}
 
-	#c-comments #a-index .list-of-comments * {
+	#a-new input,
+	#a-new select,
+	#a-new textarea,
+	#c-new input,
+	#c-new select,
+	#c-new textarea,
+	#a-edit input,
+	#a-edit select,
+	#a-edit textarea,
+	#a-search input,
+	#a-search select,
+	#c-meta-searches input,
+	#c-related-tags input,
+	#c-related-tags select {
+		background: var(--card-bg-2);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		color: var(--primary-color);
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
+		font-size: 14pt;
+		font-stretch: condensed;
 	}
 
-	#c-comments .comment {
-		background: var(--card-bg) !important;
-		border: 1px solid var(--border-color) !important;
-		padding: 20px !important;
-		margin-bottom: 20px !important;
+	#a-new input[type="submit"],
+	#c-new input[type="submit"],
+	#a-edit input[type="submit"] {
+		padding: 8px 12px !important;
+	}
+
+	#a-new textarea,
+	#c-new textarea,
+	#a-edit textarea {
+		padding: 10px;
 	}
 
 }
-
