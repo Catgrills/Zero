@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero-A
 @namespace      https://github.com/Catgrills/Zero-A
-@version        1.0.3
+@version        1.0.4
 @description    An userstyle for Danbooru called Zero-A
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -999,13 +999,9 @@
 		padding: 5px 10px !important;
 	}
 
-	#c-posts #a-show #sidebar h2:first-child {
+	#c-posts #a-show #sidebar li {
 
 		/*** ILLUSTRATION SIDEBAR ***/
-		margin-top: -15px;
-	}
-
-	#c-posts #a-show #sidebar li {
 		color: var(--primary-color);
 	}
 
