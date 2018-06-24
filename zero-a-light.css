@@ -979,16 +979,12 @@
 		padding: 5px 10px !important;
 	}
 
-	#c-posts #a-show #sidebar h2:first-child {
+	#c-posts #a-show #sidebar li {
 
 		/*** ILLUSTRATION SIDEBAR ***/
-		margin-top: -15px;
-	}
-
-	#c-posts #a-show #sidebar li {
 		color: var(--primary-color);
 	}
-
+	
 	/* ACCOUNT */
 
 	/** DESCRIPTION : change the elements of the account page **/
