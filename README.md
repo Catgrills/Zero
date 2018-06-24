@@ -1,6 +1,6 @@
 # Zero-A
 
-<img src="preview_5_zero-a.png" width="100%">
+<img src="preview_6_zero-a.png" width="100%">
 
 Preview of <i>Zero-A</i>.
 
