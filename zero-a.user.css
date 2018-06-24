@@ -700,6 +700,7 @@
 		color: #FFF;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
+		padding: 12px 15px 15px 15px !important;
 		position: relative !important;
 		top: 17px !important;
 		margin-left: 0px !important;
@@ -707,8 +708,8 @@
 
 	#close-resize-notice {
 		filter: brightness(0) invert(1) !important;
-		margin-top: 8px !important;
-		margin-right: 10px !important;
+		margin-top: 12px !important;
+		margin-right: 15px !important;
 	}
 
 	#c-posts div.notice.notice-parent,
