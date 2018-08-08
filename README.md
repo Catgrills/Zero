@@ -22,8 +22,7 @@ Instruction
 + for <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Opera</a>
 
 <strong>Step 2 : Install the script </strong>
-+ Manually : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-dark.css">Dark theme</a> or <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a-light.css">Light theme</a>
-+ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here</a>
++ Directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Zero-A/master/zero-a.user.css">click here</a>
 
 <strong>Step 3 : Install others scripts </strong>
 <ol>
