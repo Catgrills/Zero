@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero-A
 @namespace      https://github.com/Catgrills/Zero-A
-@version        1.0.4
+@version        1.0.5
 @description    An userstyle for Danbooru called Zero-A
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -32,7 +32,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("danbooru.donmai.us") {
-/*[[theme]]*/
+
+	/*[[theme]]*/
+
 	/* GENERAL */
 
 	/** DESCRIPTION : set the main font and change others elements **/
@@ -178,6 +180,7 @@
 	#nav-links,
 	#nav #site-map-link,
 	#open-edit-dialog,
+	#page #sidebar button[type="submit"],
 	#page #upgrade-account-notice,
 	#page-footer,
 	.paginator .arrow,
@@ -592,6 +595,10 @@
 		margin-left: 250px !important;
 	}
 
+	#c-posts #content {
+		margin-top: 136px !important;
+	}
+
 	#c-favorites #post-sections,
 	#c-posts #post-sections {
 
@@ -767,6 +774,7 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
+		padding: 12px 15px 15px 15px !important;
 		position: relative !important;
 		top: 17px !important;
 		margin-left: 0px !important;
@@ -779,6 +787,7 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
+		padding: 12px 15px 15px 15px !important;
 		position: relative !important;
 		top: 17px !important;
 		margin-left: 0px !important;
@@ -797,6 +806,18 @@
 		top: 17px !important;
 		margin-left: 0px !important;
 		padding: 10px !important;
+	}
+
+	.ui-corner-all.ui-state-highlight.notice {
+
+		/*** ILLUSTRATION MAIN CONTENT STATE NOTICE ***/
+		background: #FFBE76 !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		font-size: 15pt !important;
+		font-stretch: condensed !important;
+		padding: 15px !important;
 	}
 
 	div#notice:not(.ui-state-error) {
