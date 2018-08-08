@@ -7,9 +7,9 @@ Preview of <i>Zero-A</i>.
 About
 -------------------------------
 
-<i>Zero-A</i> is a custom stylesheet for <i>Danbooru</i>.
+<i>Zero-A</i> is an user style for <i>Danbooru</i>.
 
-Userstyles are CSS code designed to alter the appearance of one, some, or all sites.
+User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
 Instruction
 -------------------------------
