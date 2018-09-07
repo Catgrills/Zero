@@ -7,7 +7,7 @@ Preview of <i>Zero</i>.
 About
 -------------------------------
 
-<i>Zero</i> is an user style for <i>Danbooru</i>.
+<i>Zero</i> is a user style for <i>Danbooru</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
