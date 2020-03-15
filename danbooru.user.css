@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero
 @namespace      https://github.com/Catgrills/Zero
-@version        1.1.0
+@version        1.1.1
 @description    An user style for Danbooru called Zero.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -39,7 +39,7 @@
 
 	/** DESCRIPTION : set the main font and change others elements **/
 
-	*:not(.fas) {
+	*:not(i) {
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
 
@@ -288,6 +288,7 @@
 		border: none !important;
 		height: 100% !important;
 		width: 100% !important;
+        	padding: 10px 0px !important;
 		top: 0px !important;
 		right: 0px !important;
 		left: 0px !important;
@@ -515,6 +516,25 @@
 		margin: 0px !important;
 	}
 
+	#nav .string.optional {
+		background: transparent !important;
+		border-color: var(--border-color);
+		border-width: 0px 0px 1px 0px !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		height: 21px !important;
+		width: 150px !important;
+		padding-bottom: 5px !important;
+		padding-left: 0px !important;
+		margin-left: 5px !important;
+	}
+	
+	#nav .string.optional::placeholder {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+	}
+	
 	/* SEARCHBAR */
 
 	/** DESCRIPTION : change the elements of the search bar **/
@@ -698,6 +718,14 @@
 	#sidebar .post-count {
 		color: var(--secondary-color) !important;
 		opacity: .5;
+	}
+	
+	/* POPULAR */
+
+	/** DESCRIPTION : change the elements of the popular page **/
+	div#c-explore-posts .date-nav-links {
+		font-size: 14pt;
+		font-stretch: condensed;
 	}
 
 	/* ILLUSTRATION */
@@ -908,6 +936,11 @@
 		font-stretch: condensed;
 	}
 
+	div#c-artist-commentary-versions #a-index div.commentary-body-section {
+		background: var(--card-bg) !important;
+		border-color: var(--border-color) !important;
+	}
+	
 	.comments-for-post * {
 
 		/*** ILLUSTRATION MAIN CONTENT USERS COMMENTS ***/
@@ -1002,7 +1035,7 @@
 	#c-posts #a-show #edit input,
 	#c-posts #a-show #edit textarea,
 	#c-posts #a-show #edit #related-tags,
-    .related-tags {
+    	.related-tags {
 		background: var(--card-bg-2) !important;
 		border: none !important;
 		border-radius: 2px !important;
@@ -1134,6 +1167,19 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		padding: 20px !important;
 		margin-top: 70px !important;
+	}
+	
+	#c-bans .search-form,
+    	#c-bulk-update-requests .search-form,
+    	#c-iqdb-queries .search-form,
+    	#c-mod-actions .search-form,	
+	#c-post-appeals .search-form,
+	#c-post-approvals .search-form,
+	#c-post-flags .search-form,
+	#c-post-versions .search-form,
+    	#c-saved-searches .search-form,
+	#c-user-feedbacks .search-form {
+		margin-top: 0px !important;
 	}
 
 	.search {
@@ -1322,7 +1368,7 @@
 		/*** WIKI MAIN CONTENT ***/
 		border-left: 1px dotted var(--border-color) !important;
 		padding-left: 40px !important;
-		margin-left: 250px !important;
+		margin-left: 0px !important;
 	}
     
 	.wiki-other-name {
@@ -1436,12 +1482,30 @@
 	.list-of-forum-posts {
 		margin-bottom: 30px !important;
 	}
+	
+	.forum-post-link {
+		font-weight: normal !important;
+	}
+
+	div#c-forum-topics span.topic-status.label {
+		border-radius: 2px;
+		font-size: 12pt;
+		font-weight: bold;
+		padding: 0px 5px;
+	}
+	
+	.fineprint {
+		font-size: 14pt !important;
+		font-style: normal !important;
+		font-stretch: condensed !important;
+	}
 
 	.list-of-forum-posts .forum-post {
 		background: var(--card-bg-2);
 		border: none;
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+        	padding: 10px 15px !important;
 	}
 
 	.list-of-forum-posts .forum-post *:not(a) {
@@ -1496,12 +1560,23 @@
 	}
 
 	#source-info,
+    	#c-uploads #filedropzone,
+    	#c-uploads .related-tags,
 	#c-uploads input,
 	#c-uploads textarea {
 		background: var(--card-bg-2) !important;
 		border: none !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+	
+	#c-uploads #source-info {
+		padding: 10px !important;
+	}
+
+	#c-uploads #filedropzone {
+		min-height: auto;
+		padding: 10px !important;
 	}
 
 	#c-uploads textarea {
@@ -1522,6 +1597,7 @@
 	/* OTHERS */
 
 	/** DESCRIPTION : change the elements of others pages **/
+	#c-artist-commentaries,
 	#c-artist-commentary-versions,
 	#c-comments #a-search,
 	#c-dmails,
@@ -1531,20 +1607,35 @@
 	#c-post-events,
 	#c-post-replacements,
 	#c-post-versions,
-	#c-related-tags {
+	#c-related-tags,
+    	#c-static {
 		margin-top: 60px;
 	}
 
+    	#c-artist-commentaries h1,
 	#c-artist-commentary-versions h1,
+    	#c-bans h1,
+    	#c-bulk-update-requests h1,
 	#c-comments #a-search h1,
+    	#c-delayed-jobs h1,
 	#c-dmails h1,
 	#c-meta-searches h1,
+    	#c-mod-actions h1,
 	#c-note-versions h1,
 	#c-notes h1,
+    	#c-pool-versions h1,
+	#c-post-appeals h1,
+	#c-post-approvals h1,
 	#c-post-events h1,
+	#c-post-flags h1,
 	#c-post-replacements h1,
 	#c-post-versions h1,
-	#c-related-tags h1 {
+	#c-related-tags h1,
+    	#c-saved-searches h1,
+    	#c-static h1,
+    	#c-user-feedbacks h1,
+	#c-user-name-change-requests h1,
+    	#c-iqdb-queries h2 {
 		color: var(--primary-color);
 		font-size: 20pt;
 		font-stretch: condensed;
@@ -1664,4 +1755,31 @@
 		padding: 10px;
 	}
 
+	/* SITE MAP */
+
+	/** DESCRIPTION : change the elements of the site map page **/
+	#a-site-map {
+		margin-top: 70px !important;
+	}
+
+	#a-site-map h1 {
+		color: var(--primary-color);
+		font-size: 16pt !important;
+		font-stretch: condensed;
+	}
+
+	#a-site-map li a {
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+	
+	/* TERMS OF SERVICE */
+
+	/** DESCRIPTION : change the elements of the terms and service page **/
+	#a-terms-of-service * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		line-height: 20pt !important;
+	}
 }
