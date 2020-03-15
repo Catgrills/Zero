@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero
 @namespace      https://github.com/Catgrills/Zero
-@version        1.1.1
+@version        1.1.2
 @description    An user style for Danbooru called Zero.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -60,26 +60,38 @@
 		background: var(--body-bg) !important;
 	}
 
-	a:link {
+	a:link,
+	.tag-type-0 a, 
+	.tag-type-0 a:link, 
+	.tag-type-0 a:visited, 
+	.ui-widget-content .tag-type-0 a, 
+	.ui-widget-content .tag-type-0 a:link, 
+	.ui-widget-content .tag-type-0 a:visited, 
+	.ui-widget-content a.tag-type-0, 
+	.ui-widget-content a.tag-type-0:link, 
+	.ui-widget-content a.tag-type-0:visited, 
+	a.tag-type-0, 
+	a.tag-type-0:link, 
+	a.tag-type-0:visited {
 
 		/*** LINK COLORS ***/
 		color: #2C82C9;
 	}
 
 	.category-1 a {
-		color: #E26A6A;
+		color: #E26A6A !important;
 	}
 
 	.category-3 a {
-		color: #913D88;
+		color: #913D88 !important;
 	}
 
 	.category-4 a {
-		color: #00B16A;
+		color: #00B16A !important;
 	}
 
 	.category-5 a {
-		color: #F4B350;
+		color: #F4B350 !important;
 	}
 
 	.ui-button:hover {
