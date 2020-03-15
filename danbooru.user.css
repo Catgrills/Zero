@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero
 @namespace      https://github.com/Catgrills/Zero
-@version        1.0.9
+@version        1.1.0
 @description    An user style for Danbooru called Zero.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -39,7 +39,7 @@
 
 	/** DESCRIPTION : set the main font and change others elements **/
 
-	* {
+	*:not(.fas) {
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
 
