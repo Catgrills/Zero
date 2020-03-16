@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero
 @namespace      https://github.com/Catgrills/Zero
-@version        1.1.5
+@version        1.1.6
 @description    An user style for Danbooru called Zero.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -78,7 +78,7 @@
 		color: #2C82C9;
 	}
 	
-	a:visited {
+	a:not(.search-tag):visited {
 		color: #70757A !important;
 	}
 
