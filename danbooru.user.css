@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero
 @namespace      https://github.com/Catgrills/Zero
-@version        1.1.7
+@version        1.1.8
 @description    An user style for Danbooru called Zero.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -202,6 +202,7 @@
 	#page #upgrade-account-notice,
 	#page-footer,
 	.paginator .arrow,
+	#post-share,
 	#p-index-by-post h2,
 	.tn.hidden-posts-notice,
 	#add-fav-button,
