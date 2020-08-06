@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zero
 @namespace      https://github.com/Catgrills/Zero
-@version        1.1.8
+@version        1.1.9
 @description    An user style for Danbooru called Zero.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -191,12 +191,12 @@
 
 	#c-favorites #a-index #content h1,
 	#comments h2,
-    	#dmail-notice,
+	#dmail-notice,
 	.hint,
 	menu a[href="/user_upgrade/new"],
 	#nav-links,
 	#nav #site-map-link,
-    	#news-updates,
+	#news-updates,
 	#open-edit-dialog,
 	#page #sidebar button[type="submit"],
 	#page #upgrade-account-notice,
@@ -204,6 +204,7 @@
 	.paginator .arrow,
 	#post-share,
 	#p-index-by-post h2,
+	#search-box h2,
 	.tn.hidden-posts-notice,
 	#add-fav-button,
 	#remove-fav-button {
@@ -427,16 +428,31 @@
 		transition: margin-left .5s;
 	}
 
-	#top h1 a {
+    #top #app-name-header {
+		height: 57px !important;
+		width: 100% !important;
+		text-align: center !important;
+		position: fixed !important;
+		margin-left: 0px !important;
+		top: -13px !important;
+		line-height: 45px !important;
+		z-index: 999 !important;
+		transition: margin-left .5s;
+	}
+
+	#top h1 a,
+	#top #app-name-header {
 		font-size: 14pt !important;
 		width: 100% !important;
 		color: #FFF !important;
 		visibility: hidden;
 	}
 
-	#top h1 a::after {
+	#top h1 a::after,
+	#top #app-name-header::after {
 
 		/*** HEADER TITLE ***/
+		background-color: #2CC990 !important;
 		content: "DANBOORU 段ボール" !important;
 		font-family: "Roboto", "KFHimaji" !important;
 		font-stretch: condensed !important;
@@ -559,7 +575,7 @@
 	#sidebar #search-box {
 		width: 100% !important;
 		position: fixed !important;
-		top: 44px !important;
+		top: 43px !important;
 		left: 0px !important;
 		right: 0px !important;
 		margin: auto !important;
@@ -642,11 +658,11 @@
 		margin-top: 0px !important;
 	}
     
-    .fineprint.hidden-posts-notice {
-        font-size: 14pt !important;
-        font-style: normal !important;
-        font-stretch: condensed !important;
-    }
+	.fineprint.hidden-posts-notice {
+		font-size: 14pt !important;
+		font-style: normal !important;
+		font-stretch: condensed !important;
+	}
 
 	#c-favorites #post-sections,
 	#c-posts #post-sections {
@@ -718,7 +734,8 @@
 	}
 
 	#sidebar h1,
-	#sidebar h2 {
+	#sidebar h2,
+	#sidebar h3 {
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
@@ -1028,6 +1045,15 @@
 
 	#comment_do_not_bump_post {
 		margin-top: -4px !important;
+	}
+    
+	.more-recommended-posts {
+
+		/*** ILLUSTRATION MAIN CONTENT RECOMMENDED ***/
+		font-size: 12pt !important;
+		font-stretch: condensed;
+		font-weight: bold !important;
+		margin-top: 10px !important;
 	}
 
 	#c-posts #a-show #edit * {
